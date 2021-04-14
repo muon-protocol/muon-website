@@ -1,0 +1,56 @@
+.roadmap {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    padding: 50px 0;
+    padding-bottom: 90px;
+    border-bottom: 1px solid #CECECE;
+    @include respond(tab-land){
+      grid-template-columns: repeat(2,1fr)
+     };
+     @include respond(phone){
+        grid-template-columns: repeat(1,1fr)
+
+       
+       };
+  &__ul {
+      font-size: 1.7rem;
+      margin-left: 30px;
+      margin-top: 10px;
+      padding-bottom: 5rem;
+      border-bottom: 1px solid #AEACFF;
+  }
+  &__li {
+      margin: 0 15px;
+  }
+  &__card {
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 1px 1px 5px #D7D7D7 ;
+      border: 1px solid #D7D7D7;
+      border-radius: 5px;
+      &-status {
+        padding: 0 20px;
+        font-size: 1.7rem;
+      
+    }
+    &--head {
+    }
+    
+  }
+}
+.status--done {
+    color: #1DD3BD;
+}
+.status--progres{
+    color: #FFA451;
+}
+.status--soon{
+    color: #D7D7D7;
+}
+.roadmap-header{
+    margin-top: 50px;
+    h2{
+        text-transform: uppercase;
+    }
+}

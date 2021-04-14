@@ -1,0 +1,9 @@
+.USECASE__text{
+    width: 40%!important;
+    @include respond(tab-port){
+        width: 66%!important;
+     };
+    p{
+        margin-top: 5px;
+    }
+}

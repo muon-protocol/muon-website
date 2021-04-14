@@ -1,0 +1,40 @@
+.MounToken-sec{
+   .MounToken{
+       padding: 50px 0;
+       h2{
+           padding:10px 90px ;
+           text-transform: uppercase;
+       }
+       &__image{
+           padding: 4rem 0;
+          
+           padding-bottom: 60px;
+          img{
+              width: 20rem;
+
+          }
+       }
+       &__text{
+ padding: 4rem 100px;
+           border-bottom: 1px solid #CECECE;
+           font-size: 1.7rem;
+           padding-bottom: 90px;
+           @include respond(small-phone){
+            padding: 4rem 10px;
+
+
+
+           
+           };
+           p{
+               width: 35%;
+               @include respond(tab-port){
+                width: 100%;
+             };
+               span{
+                   color: #5551FF;
+               }
+           }
+       }
+   } 
+}

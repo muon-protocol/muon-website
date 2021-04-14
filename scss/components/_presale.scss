@@ -1,0 +1,40 @@
+.presale{
+    @include respond(tab-port){
+       flex-direction: column!important;
+     };
+}
+.presale__table{
+    width: 50rem;
+    font-size: 1.2rem!important;
+    thead th{
+        border: none;
+        font-weight: bold!important;
+    }
+    tr th{
+        font-weight: normal;
+       
+    }
+    tbody tr{
+        color: #909090;
+      
+    }
+    th,td{
+        vertical-align: inherit ;
+    }
+}
+.presale__link{
+    text-decoration:underline
+}
+.circle{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+   margin-right: 5px;
+    &-yellow{
+        background-color: #FFA451;
+        
+    }
+    &-green{
+        background-color: #1DD3BD;
+    }
+}

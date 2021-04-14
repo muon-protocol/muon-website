@@ -1,0 +1,18 @@
+.Economi__list{
+  
+   margin: 10px 0;
+   margin-left: -3rem;
+   @include respond(small-phone){
+    width: 90%!important;
+    margin-left: 50px!important;
+  };
+   h2{
+    margin-left: -6rem;
+    text-transform: uppercase;
+   }
+    .Economi__li{
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+        margin: 3px 0;
+    }
+}

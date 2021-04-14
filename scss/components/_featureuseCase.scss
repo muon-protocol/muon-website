@@ -1,0 +1,27 @@
+.featureusecase-sec{
+    
+}
+.featureusecase{
+    padding: 90px 0;
+    border-bottom: 1px solid #CECECE;
+
+ &-head{
+    text-align: center;
+    h2{
+        text-transform: uppercase;
+    }
+ }
+ &__content{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap: 60px;
+     margin-top: 50px;
+     @include respond(big-phone){
+        grid-template-columns:1fr;
+      };
+     &--box{
+       p{
+           font-size: 1.5rem;       }
+     }
+ }
+}

@@ -1,0 +1,9 @@
+.sdk__text {
+    margin-right: 52px;
+}
+.sdk.Mounnodes {
+    @include respond(tab-port){
+        flex-direction: column;
+     };
+    
+}

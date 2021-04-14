@@ -1,0 +1,58 @@
+.feature__sec{
+ 
+    .feature{
+        padding: 9rem 5rem;
+        border-bottom: 1px solid #CECECE;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        @include respond(tab-land){
+           flex-direction: column;
+           justify-content: center //1rem=9px 
+        };
+        &__image{
+            position: relative;
+            margin-top: 57px;
+            p{
+                position: absolute;
+                font-size: 1.5rem;
+            }
+            img{
+                @include respond(phone){
+                    width: 32rem!important;
+                  };
+            }
+            p.trus-p {
+                top: -15px;
+                left: 46%;
+            }
+            p.COMPOSABILITY-p {
+                right: -12px;
+                bottom: 90px;
+            }
+            p.speed-p {
+                bottom: 90px;
+                left: 27px;
+            }
+        }
+        &__content{
+            margin-left:130px;
+            @include respond(phone){
+                margin-left:0;
+              };
+            &--text{
+                margin-top: 30px;
+                width:70%;
+                @include respond(phone){
+                    width:100%;
+                  };
+                p{
+                    font-size: 1.5rem;
+                    padding: 5px;
+                }
+                h4{
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

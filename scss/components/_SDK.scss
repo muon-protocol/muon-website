@@ -1,0 +1,50 @@
+.sdk-sec{
+    
+    
+    .sdk{
+        padding: 9rem 9rem;
+        border-bottom: 1px solid #CECECE;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        @include respond(tab-port){
+            flex-direction: column-reverse;
+            align-items: center;
+
+         };
+         @include respond(small-phone){
+            padding: 90px 10px;
+
+           
+           };
+        &__image{
+        img{
+            width: 40rem;
+        }
+        }
+        &__text{
+            width: 30%;
+            @include respond(tab-port){
+                width: 70%;
+                margin-top: 20px;
+            
+                margin-left: 29px;
+             };
+             @include respond(small-phone){
+                width: 90%;
+
+    
+               
+               };
+            h2{
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+            p{
+                font-size: 1.7rem;
+                margin-top: 10px;
+            }
+
+        }
+    }
+}
