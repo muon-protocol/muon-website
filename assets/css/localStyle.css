@@ -1,0 +1,142 @@
+.dataTables_length {
+  padding-top: 20px;
+}
+
+.dataTables_length label {
+  display: inline-flex;
+}
+
+.dataTables_length label select {
+  padding-right: 30px;
+  margin: -3px 5px;
+}
+
+.page-item.active .page-link {
+  background-color: #746fa7;
+}
+
+.paging_simple_numbers {
+  float: right;
+}
+
+.dataTables_filter {
+  float: right;
+  min-width: 35%;
+}
+
+.dataTables_filter label {
+  min-width: 100%;
+}
+
+.dataTables_filter label input {
+  padding: 20px 10px;
+  font-size: medium;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 21, 0.125);
+}
+
+.dataTables_processing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 33%;
+  padding: 25px;
+  text-align: center;
+  background-color: rgb(254 254 254 / 86%);
+  color: rgb(92 111 234);
+  font-size: large;
+  font-weight: bold;
+}
+
+#conditionList {
+  /* height: 70px; */
+}
+
+#conditionList ul {
+  height: 100%;
+}
+
+#conditionList ul li{
+  height: 60%;
+}
+
+#conditionList ul li p{
+  height: 100%;
+}
+
+.green-text {
+  color: #1DD3BD!important;
+}
+
+.blue-text {
+  color: #0779E4!important;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #0779E4 0%, #1DD3BD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* @font-face {
+  font-family: 'fh_oscarregular';
+  src: url('assets/font/FH-Oscar/woff2 (web)/FHOscar-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
+} */ /* This font is added after the code was fetched */
+
+p, span, small, h1, h2, h3, h4, h5, a, div {
+  font-family: fh_oscarregular;
+}
+
+.letter-spacing-1 {
+  letter-spacing: .1rem!important;
+}
+
+.text-black {
+  color: black;
+}
+
+.rounded-bottom-6 {
+  border-bottom-right-radius: 10px!important;
+  border-bottom-left-radius: 10px!important;
+}
+
+.card-header:first-child {
+  border-radius: calc(10px - 1px) calc(10px - 1px) 0 0;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card-header {
+  padding: .4rem 1.25rem;
+  background-color: #DEDFE1!important;
+  border-color: #D7D7D7!important;
+}
+
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+}
+
+/* .terminal-wrapper > div > div > div > span{
+  font-family: Monument Grotesk!important;
+  line-height: 1px;
+  font-variant-numeric: tabular-nums;
+  font-size: 1rem!important;
+} */
+
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: #23252633;
+  background-color: #2325265c;
+}
