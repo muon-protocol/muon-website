@@ -2,7 +2,7 @@
     
 }
 .featureusecase{
-    padding: 90px 0;
+    padding: 90px 20px;
     border-bottom: 1px solid #CECECE;
 
  &-head{
@@ -20,8 +20,26 @@
         grid-template-columns:1fr;
       };
      &--box{
+         img{
+             width: 100%;
+
+         }
+         h3{
+             margin: 15px 0;
+         }
        p{
            font-size: 1.5rem;       }
      }
  }
+}
+.Moun__cap{
+    font-family: RecklessTRIAL, serif;
+    //font-weight: 400;
+     font-style: normal;
+     margin-top: 0!important;
+     font-size: 1.9rem!important;
+     line-height: 1.1;
+}
+.grey__bg{
+    background-color: #F1EBFC;
 }

@@ -15,4 +15,15 @@
         line-height: 1.7rem;
         margin: 3px 0;
     }
+    
+}
+ul.Economi__ul {
+    margin: 15px 0;
+    margin-left: -13px;
+}
+.economi--img{
+    width: 59rem!important;
+    @include respond(big-phone){
+        width: 100%!important;
+      };
 }

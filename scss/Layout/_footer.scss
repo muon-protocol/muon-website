@@ -36,5 +36,19 @@ img.center.footer-logo--img1 {
       margin: 20px 0;
       .navigation__nav--li{
           font-size: 1.5rem;
+          font-weight: 300;
       }
   }
+  .center.footer-logo {
+    margin-left: 30px;
+    @include respond(tab-port){
+    margin-left: 0;
+    
+     };
+}
+.center.footer-logo{
+    @include respond(phone){
+        margin-left: 0!important;
+        flex-direction: column
+         };
+}

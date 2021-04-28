@@ -1,12 +1,13 @@
 .roadmap {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-gap: 30px;
-    padding: 50px 0;
+    padding: 50px 15rem;
     padding-bottom: 90px;
     border-bottom: 1px solid #CECECE;
     @include respond(tab-land){
-      grid-template-columns: repeat(2,1fr)
+      grid-template-columns: repeat(2,1fr);
+      padding: 50px 0;
      };
      @include respond(phone){
         grid-template-columns: repeat(1,1fr)
@@ -17,7 +18,7 @@
       font-size: 1.7rem;
       margin-left: 30px;
       margin-top: 10px;
-      padding-bottom: 5rem;
+      padding-bottom: 15rem;
       border-bottom: 1px solid #AEACFF;
   }
   &__li {

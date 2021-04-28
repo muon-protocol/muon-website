@@ -17,6 +17,12 @@
     src: url("/assets/font/FH-Oscar/woff2\ \(web\)/") format("woff2"),
          url("/assets/font/FH-Oscar/ttf/") format("ttf");
   }
+  @font-face {
+    
+    font-family: "RecklessTRIAL";
+    src: url("/assets/font/reckless/RecklessTRIAL-Regular.otf") format("ttf"),
+         url("/assets/font/reckless/RecklessTRIAL-RegularItalic.otf") format("ttf");
+  }
 html {
   font-size: 62.5%;
    @include respond(tab-land){
@@ -67,4 +73,10 @@ body {
 }
 .blue-text{
     color: #5551FF;
+}
+.purple-text{
+    color: #8F00FF;
+}
+.pink-bg{
+    background-color: #FBE4D5;
 }

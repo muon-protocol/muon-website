@@ -1,5 +1,5 @@
 .blockchain__text{
-    width: 50%!important;
+    width: 44%!important;
     @include respond(tab-port){
         width: 66%!important;
         @include respond(big-phone){
@@ -7,8 +7,8 @@
           };
       };
     p{
-        font-family: adobe-garamond-pro, serif;
-        font-weight: 400;
+        font-family: RecklessTRIAL, serif;
+       //font-weight: 400;
         font-style: italic;
     }
 }

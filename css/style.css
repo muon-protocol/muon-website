@@ -9,32 +9,32 @@ $breakpoint arguement choices
 .header {
   font-size: 1.5rem; }
   .header__caption {
-    font-family: adobe-garamond-pro, serif;
     font-weight: 400;
-    font-style: italic;
     justify-content: space-between;
-    border-top: 1px solid rgba(0, 0, 0, 0.6); }
+    border-top: 1px solid white;
+    padding-top: 8px; }
     @media (max-width: 25em) {
       .header__caption {
         flex-direction: column;
         align-items: flex-end !important; } }
     .header__caption p {
       width: 65vw;
-      padding: 20px 0;
-      margin-top: -13px; }
+      padding: 3px 0;
+      margin-top: -13px;
+      color: white; }
       @media (max-width: 25em) {
         .header__caption p {
           width: 90vw; } }
     .header__caption a {
       text-transform: uppercase;
-      color: #000000 !important;
+      color: #ffffff !important;
       cursor: pointer; }
       .header__caption a:hover {
         color: #5551FF !important; }
 
 .showCase__sec {
   height: 100vh;
-  background-image: linear-gradient(white 35%, #b4b3fd69); }
+  background: #5F5CFE; }
   .showCase__sec .showCase {
     height: 75vh; }
     @media (max-width: 37.5em) {
@@ -46,8 +46,7 @@ $breakpoint arguement choices
     flex-direction: column;
     justify-content: center; }
     .showCase__sec .showcase__content img {
-      width: 400px;
-      margin-top: -14rem; }
+      width: 30rem; }
     .showCase__sec .showcase__content h1 {
       margin-top: -6rem; }
 
@@ -80,16 +79,21 @@ $breakpoint arguement choices
 
 .moun--pronounce {
   font-size: 1.3rem;
-  padding: 10px 0; }
+  padding: 10px 0;
+  margin-top: -53px; }
   .moun--pronounce p {
-    margin: 0 6px; }
+    margin: 0 6px;
+    color: #ffffff; }
   .moun--pronounce .moun {
     font-weight: bold; }
   .moun--pronounce .moun--des {
-    color: rgba(0, 0, 0, 0.5); }
+    color: #fffefe; }
     @media (max-width: 25em) {
       .moun--pronounce .moun--des {
         white-space: nowrap; } }
+
+.header__cap-flex {
+  justify-content: space-between; }
 
 .footer__container {
   padding: 90px 0;
@@ -116,7 +120,19 @@ img.center.footer-logo--img1 {
 .footer__nav {
   margin: 20px 0; }
   .footer__nav .navigation__nav--li {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    font-weight: 300; }
+
+.center.footer-logo {
+  margin-left: 30px; }
+  @media (max-width: 56.25em) {
+    .center.footer-logo {
+      margin-left: 0; } }
+
+@media (max-width: 37.5em) {
+  .center.footer-logo {
+    margin-left: 0 !important;
+    flex-direction: column; } }
 
 /* 
 $breakpoint arguement choices
@@ -140,6 +156,10 @@ $breakpoint arguement choices
 @font-face {
   font-family: "Oscar";
   src: url("/assets/font/FH-Oscar/woff2 (web)/") format("woff2"), url("/assets/font/FH-Oscar/ttf/") format("ttf"); }
+
+@font-face {
+  font-family: "RecklessTRIAL";
+  src: url("/assets/font/reckless/RecklessTRIAL-Regular.otf") format("ttf"), url("/assets/font/reckless/RecklessTRIAL-RegularItalic.otf") format("ttf"); }
 
 html {
   font-size: 62.5%; }
@@ -189,6 +209,12 @@ body {
 .blue-text {
   color: #5551FF; }
 
+.purple-text {
+  color: #8F00FF; }
+
+.pink-bg {
+  background-color: #FBE4D5; }
+
 h1 {
   font-size: 3rem; }
 
@@ -214,6 +240,15 @@ h5 {
   @media (max-width: 37.5em) {
     .What-sec .what {
       flex-direction: column; } }
+  .What-sec .what__text p {
+    width: 60%;
+    font-size: 1.7rem;
+    margin-top: 20px; }
+    @media (max-width: 37.5em) {
+      .What-sec .what__text p {
+        width: 100%; } }
+    .What-sec .what__text p span {
+      color: #5551ff; }
   .What-sec .what__text--p {
     width: 50%;
     font-size: 1.7rem;
@@ -226,7 +261,11 @@ h5 {
   .What-sec .what__text--h2 {
     display: flex;
     flex-direction: column;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    font-family: RecklessTRIAL, serif;
+    font-style: normal; }
+  .What-sec .what__image img {
+    width: 50rem; }
   .What-sec .what__image p {
     font-family: adobe-garamond-pro, serif;
     font-weight: 400;
@@ -250,6 +289,12 @@ h5 {
       height: 100%;
       padding: 10px; }
 
+.align-center {
+  align-items: center !important; }
+
+.stack-token--img {
+  width: 100% !important; }
+
 .feature__sec .feature {
   padding: 9rem 5rem;
   border-bottom: 1px solid #CECECE;
@@ -265,9 +310,11 @@ h5 {
     .feature__sec .feature__image p {
       position: absolute;
       font-size: 1.5rem; }
-    @media (max-width: 37.5em) {
-      .feature__sec .feature__image img {
-        width: 32rem !important; } }
+    .feature__sec .feature__image img {
+      width: 50rem; }
+      @media (max-width: 37.5em) {
+        .feature__sec .feature__image img {
+          width: 32rem !important; } }
     .feature__sec .feature__image p.trus-p {
       top: -15px;
       left: 46%; }
@@ -278,7 +325,7 @@ h5 {
       bottom: 90px;
       left: 27px; }
   .feature__sec .feature__content {
-    margin-left: 130px; }
+    margin-left: 22rem; }
     @media (max-width: 37.5em) {
       .feature__sec .feature__content {
         margin-left: 0; } }
@@ -325,6 +372,11 @@ h5 {
     .sdk-sec .sdk__text p {
       font-size: 1.7rem;
       margin-top: 10px; }
+
+.feature__moun-sec {
+  background-color: #E8E8FA; }
+  .feature__moun-sec .feature__moun--text {
+    width: 40% !important; }
 
 .MounToken-sec .MounToken {
   padding: 50px 0; }
@@ -382,6 +434,16 @@ h5 {
     line-height: 1.7rem;
     margin: 3px 0; }
 
+ul.Economi__ul {
+  margin: 15px 0;
+  margin-left: -13px; }
+
+.economi--img {
+  width: 59rem !important; }
+  @media (max-width: 50em) {
+    .economi--img {
+      width: 100% !important; } }
+
 .Circulation__p {
   margin: 10px 0; }
   .Circulation__p p {
@@ -411,13 +473,26 @@ h5 {
   .square__pink {
     background-color: #F07B72; }
 
-@media (max-width: 56.25em) {
-  .presale {
-    flex-direction: column !important; } }
+.presale {
+  flex-direction: column-reverse; }
+  @media (max-width: 56.25em) {
+    .presale {
+      flex-direction: column !important; } }
+
+a {
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-bottom: 30px; }
+  a:hover {
+    color: #5551FF !important;
+    text-decoration: underline !important; }
 
 .presale__table {
-  width: 50rem;
+  width: 111rem;
   font-size: 1.2rem !important; }
+  @media (max-width: 56.25em) {
+    .presale__table {
+      width: 100%; } }
   .presale__table thead th {
     border: none;
     font-weight: bold !important; }
@@ -443,14 +518,15 @@ h5 {
 
 .roadmap {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
-  padding: 50px 0;
+  padding: 50px 15rem;
   padding-bottom: 90px;
   border-bottom: 1px solid #CECECE; }
   @media (max-width: 75em) {
     .roadmap {
-      grid-template-columns: repeat(2, 1fr); } }
+      grid-template-columns: repeat(2, 1fr);
+      padding: 50px 0; } }
   @media (max-width: 37.5em) {
     .roadmap {
       grid-template-columns: repeat(1, 1fr); } }
@@ -458,7 +534,7 @@ h5 {
     font-size: 1.7rem;
     margin-left: 30px;
     margin-top: 10px;
-    padding-bottom: 5rem;
+    padding-bottom: 15rem;
     border-bottom: 1px solid #AEACFF; }
   .roadmap__li {
     margin: 0 15px; }
@@ -487,7 +563,7 @@ h5 {
     text-transform: uppercase; }
 
 .featureusecase {
-  padding: 90px 0;
+  padding: 90px 20px;
   border-bottom: 1px solid #CECECE; }
   .featureusecase-head {
     text-align: center; }
@@ -501,11 +577,25 @@ h5 {
     @media (max-width: 50em) {
       .featureusecase__content {
         grid-template-columns: 1fr; } }
+    .featureusecase__content--box img {
+      width: 100%; }
+    .featureusecase__content--box h3 {
+      margin: 15px 0; }
     .featureusecase__content--box p {
       font-size: 1.5rem; }
 
+.Moun__cap {
+  font-family: RecklessTRIAL, serif;
+  font-style: normal;
+  margin-top: 0 !important;
+  font-size: 1.9rem !important;
+  line-height: 1.1; }
+
+.grey__bg {
+  background-color: #F1EBFC; }
+
 .blockchain__text {
-  width: 50% !important; }
+  width: 44% !important; }
   @media (max-width: 56.25em) {
     .blockchain__text {
       width: 66% !important; } }
@@ -513,8 +603,7 @@ h5 {
     .blockchain__text {
       width: 95% !important; } }
   .blockchain__text p {
-    font-family: adobe-garamond-pro, serif;
-    font-weight: 400;
+    font-family: RecklessTRIAL, serif;
     font-style: italic; }
 
 .blockchain__image {

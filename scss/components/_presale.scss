@@ -1,11 +1,26 @@
 .presale{
+    flex-direction: column-reverse;
     @include respond(tab-port){
        flex-direction: column!important;
      };
 }
+a{
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-bottom: 30px;
+    &:hover{
+        color: #5551FF!important;
+        text-decoration: underline!important;
+        
+    }
+}
 .presale__table{
-    width: 50rem;
+    width: 111rem;
     font-size: 1.2rem!important;
+    @include respond(tab-port){
+        width: 100%;
+
+      };
     thead th{
         border: none;
         font-weight: bold!important;
