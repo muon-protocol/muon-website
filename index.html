@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="manifest" href="/manifest.json"/>
     <link href="/static/css/main.ee95e926.chunk.css" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
     <title>Muon</title>
   </head>
   <body>
@@ -70,18 +75,18 @@
                 Muon is an elementary layer zero solution, turning blockchain technologies into an ecosystem.  Like an elementary particle, the Muon protocol is
                 one of the building blocks of our new decentralized world. It consists of a large number of nodes that sign valuable data upon request and push sensitive data to blockchains. Muon is a base protocol which allows for interoperability and oracle services.  In our world computer, Ethereum is the immutable and static data storage (ROM), while Muon symbolises random access memory & central processing units (RAM + CPU).
               </p>
-              <a> LEARN MORE ↓ </a>
+              <a onclick="jump()"> LEARN MORE ↓ </a>
             </div>
           </div>
         </div>
       </section>
    
     </header>
-    <section class="sdk-sec">
+    <section class="sdk-sec" id="learn-more">
       <div class="container">
         <div class="sdk Moun__fig">
           <div class="sdk__image blockchain__image center">
-            <img src="/assets/image/png/Muon-Fig-1.png" />
+            <img src="./assets/image/svg/worldComputer.svg" />
           </div>
           <div class="sdk__text blockchain__text Muon-Fig-h2">
             <h2>Combined with other blockchains, Muon is the ultimate decentralized trustable world-computer</h2>
@@ -119,7 +124,7 @@ Nick Szabo
             </p>
           </div>
           <div class="sdk__image">
-            <img class="realworl-img" src="/assets/image/png/real-world-data.png" />
+            <img class="realworl-img" src="./assets/image/svg/realWorldData.svg" />
           </div>
         </div>
       </div>
@@ -152,7 +157,7 @@ Nick Szabo
 
             </p>
           </div>
-          <div class="what__image">
+          <a class="what__image" href='demo.html'>
             <!-- <div class="what__image--editor">
               <div class="what__image--editor--head">init.pythia</div>
               <div class="what__image--editor--body">
@@ -160,7 +165,7 @@ Nick Szabo
               </div>
             </div> -->
            <img src="assets/image/png/terminal.png" />
-          </div>
+          </a>
 
 
           <p class="pythia__Cap">*during trading hours of the NYSE</p>
@@ -189,7 +194,7 @@ Nick Szabo
               </p>
             </div>
             <div class="feature__content--text">
-              <h4>compasibility</h4>
+              <h4>Composability</h4>
               <p>
                 
 
@@ -204,7 +209,7 @@ Nick Szabo
       <div class="container">
         <div class="sdk">
           <div class="sdk__text">
-            <h2 style="color: #FFA451;">MOUN SDK
+            <h2 style="color: #FFA451;">MUON SDK
              
             </h2>
             <p class="Moun__cap">
@@ -425,7 +430,7 @@ A Muon JS library will be provided <br>for developers to implement Muon into the
             </ul>
           </div>
           <div class="sdk__image">
-            <img class="economi--img" src="/assets/image/png/static-chart.png" />
+            <img class="economi--img" src="/assets/image/svg/static-chart.svg" />
           </div>
         </div>
       </div>
@@ -671,7 +676,7 @@ A Muon JS library will be provided <br>for developers to implement Muon into the
             </p>
           </div>
           <div class="roadmap__card">
-            <h2 class="roadmap__card--head">
+            <h2 style="padding: 8px 0;">
               <span class="blue-text">JUNE</span> 
             </h2>
             <ul class="roadmap__ul">
@@ -743,6 +748,12 @@ A Muon JS library will be provided <br>for developers to implement Muon into the
 
     </footer>
   </body>
+  <script>
+    function jump() {
+      var elmnt = document.getElementById("learn-more");
+      elmnt.scrollIntoView();
+    }
+  </script>
   <script src="/static/js/chart_bundle.js"></script>
   <script src="/static/js/2.e4587192.chunk.js"></script>
   <script src="/static/js/main.d4c02f03.chunk.js"></script>
