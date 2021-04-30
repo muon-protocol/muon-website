@@ -1,5 +1,6 @@
 .footer{
-
+    background-color: #F1F1FF;
+    padding-bottom: 15rem;
     &__container{
         padding: 90px 0;
         border-bottom: 1px solid #CECECE;
@@ -8,6 +9,9 @@
     &-header{
         text-align: center;
         margin-bottom: 40px;
+        h2{
+            font-size: 3.5rem;
+        }
     }
     &-logo{
         img{
@@ -29,6 +33,9 @@ img.center.footer-logo--img1 {
       &--li {
         text-transform: uppercase;
         margin: 0 10px;
+        a{
+            font-size: 1.5rem;
+        }
         
       }
     }

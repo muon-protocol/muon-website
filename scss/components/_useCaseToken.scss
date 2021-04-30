@@ -1,9 +1,15 @@
 .USECASE__text{
     width: 40%!important;
     @include respond(tab-port){
-        width: 66%!important;
+        width: 100%!important;
      };
     p{
         margin-top: 5px;
     }
+}
+.mtokenusecase{
+    @include respond(tab-port){
+        
+       flex-direction: column!important
+     };
 }

@@ -40,6 +40,7 @@ html {
 body {
     box-sizing: border-box;
     background-color: #e5e5fc0a;
+    font-family: 'Oscar',sans-serif;
     @include respond(tab-port){
         padding: 0;
     };
@@ -72,11 +73,17 @@ body {
     align-items: center;
 }
 .blue-text{
-    color: #5551FF;
+    color: #5551FF!important;
 }
 .purple-text{
-    color: #8F00FF;
+    color: #8F00FF!important;
 }
 .pink-bg{
     background-color: #FBE4D5;
+}
+.margintop-3{
+    margin-top: 3rem!important;
+}
+.bluegrey-bg{
+    background-color: #E8E8FA;
 }

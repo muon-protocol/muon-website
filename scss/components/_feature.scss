@@ -4,11 +4,19 @@
         padding: 9rem 5rem;
         border-bottom: 1px solid #CECECE;
         justify-content: space-evenly;
-        align-items: flex-start;
+        
+        
         @include respond(tab-land){
            flex-direction: column;
            justify-content: center //1rem=9px 
         };
+        @include respond(tab-port){
+            padding: 20px 10px;
+            
+            
+        
+        
+         };
         &__image{
             position: relative;
             margin-top: 57px;
@@ -17,9 +25,17 @@
                 font-size: 1.5rem;
             }
             img{
-                width: 50rem;
+                width: 58rem;
+                margin-top: 14px;
+                @include respond(tab-port){
+                    margin-top: 0;
+                    
+                    
+                
+                
+                 };
                 @include respond(phone){
-                    width: 32rem!important;
+                    width: 100%!important;
                   };
             }
             p.trus-p {
@@ -36,19 +52,26 @@
             }
         }
         &__content{
-            margin-left:22rem;
+            margin-left:10rem;
             @include respond(phone){
                 margin-left:0;
               };
             &--text{
-                margin-top: 30px;
-                width:70%;
+                margin-top: 10px;
+                width:90%;
                 @include respond(phone){
                     width:100%;
                   };
                 p{
                     font-size: 1.5rem;
                     padding: 5px;
+                    @include respond(tab-port){
+                        font-size: 15px;
+                        
+                        
+                    
+                    
+                     };
                 }
                 h4{
                     text-transform: uppercase;

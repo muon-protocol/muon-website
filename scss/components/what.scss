@@ -1,14 +1,22 @@
 .What-sec {
   .what {
-    padding: 90px 40px;
+    padding: 90px 90px;
     border-bottom: 1px solid #CECECE;
+    position: relative;
+    @include respond(tab-port){
+      padding: 40px 10px;
+      width: 90%;
+      margin-top: 20px;
+  
+  
+   };
     @include respond(phone){
       flex-direction: column;
      
      };
     &__text {
       p{
-        width: 60%;
+        width: 79%;
         font-size: 1.7rem;
         margin-top: 20px;
         @include respond(phone){
@@ -42,7 +50,12 @@
     }
     &__image {
       img{
-        width: 50rem;
+        width: 59rem;
+        @include respond(tab-port){
+          width: 100%;
+      
+       //   margin-left: 29px;
+       };
       }
       p {
         font-family: adobe-garamond-pro, serif;
@@ -77,5 +90,20 @@
   align-items: center!important;
 }
 .stack-token--img{
-  width: 100%!important;
+  width: 27rem!important;
+  margin-right: 40px;
+  @include respond(tab-port){
+    width: 100%!important;
+    margin-right: 0;
+
+  };  
+}
+.pythia__Cap{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 12.5px;
+  font-family: RecklessTRIAL, serif;
+  //font-weight: 400;
+   font-style: normal;
 }

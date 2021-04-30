@@ -10,25 +10,25 @@
         @include respond(tab-port){
             flex-direction: column-reverse;
             align-items: center;
-
+    padding: 40px 10px;
          };
          @include respond(small-phone){
-            padding: 90px 10px;
+        
 
            
            };
         &__image{
         img{
-            width: 40rem;
+            width: 44rem;
         }
         }
         &__text{
-            width: 30%;
+            width: 40%;
             @include respond(tab-port){
-                width: 70%;
+                width: 90%;
                 margin-top: 20px;
             
-                margin-left: 29px;
+             //   margin-left: 29px;
              };
              @include respond(small-phone){
                 width: 90%;
@@ -37,12 +37,14 @@
                
                };
             h2{
-                letter-spacing: 2px;
-                text-transform: uppercase;
+               
             }
             p{
                 font-size: 1.7rem;
                 margin-top: 10px;
+                @include respond(tab-port){
+                    font-size: 15px;
+                  };  
             }
 
         }
@@ -52,5 +54,20 @@
     background-color: #E8E8FA;
  .feature__moun--text{
     width: 40%!important;
+    @include respond(tab-port){
+        width: 100%!important;
+      };  
  }
+}
+.Moun__fig{
+    @include respond(tab-port){
+        flex-direction: column!important;
+      };  
+      .sdk-sec .sdk__text {
+       
+        @include respond(tab-port){
+         margin-left: 0!important; 
+          };
+       
+    }
 }

@@ -38,3 +38,12 @@
        }
    } 
 }
+.realworl-img{
+    width: 52rem!important;
+    @include respond(tab-land){
+        width: 100%!important;
+
+
+       
+       };
+}

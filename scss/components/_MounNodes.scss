@@ -1,9 +1,14 @@
-.sdk__text {
-    margin-right: 52px;
-}
+// .sdk__text {
+//     margin-right: 52px;
+// }
 .sdk.Mounnodes {
     @include respond(tab-port){
         flex-direction: column;
      };
     
+}
+.moun__sdk{
+    .Moun__cap{
+        margin-top: 30px!important;
+    }
 }

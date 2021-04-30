@@ -1,8 +1,8 @@
 .presale{
     flex-direction: column-reverse;
-    @include respond(tab-port){
-       flex-direction: column!important;
-     };
+    max-width: 130rem;
+    overflow: auto;
+    margin: 0 auto;
 }
 a{
     font-size: 1.7rem;
@@ -15,12 +15,10 @@ a{
     }
 }
 .presale__table{
+    margin-top: 50px;
     width: 111rem;
-    font-size: 1.2rem!important;
-    @include respond(tab-port){
-        width: 100%;
-
-      };
+    font-size: 1.7rem!important;
+    
     thead th{
         border: none;
         font-weight: bold!important;
@@ -52,4 +50,14 @@ a{
     &-green{
         background-color: #1DD3BD;
     }
+}
+.table__Res--p{
+    display: none;
+
+    @include respond(tab-land){
+        display: block;
+        color: #909090;
+        font-size: 15px;
+        text-align: center;
+     };
 }
