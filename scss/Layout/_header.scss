@@ -1,5 +1,5 @@
 .header {
-  font-size: 1.5rem;
+  font-size: 15px;
 
   &__caption {
  
@@ -9,18 +9,22 @@
     justify-content: space-between;
     border-top: 1px solid rgba($color: #ffffff, $alpha:1);
     padding-top: 8px;
-    @include respond(small-phone){
+    @include respond(tab-port){
      flex-direction: column;
      align-items: flex-end!important;
     };
+    h4{
+      font-size: 15px;
+    }
     p {
       width: 65vw;
+      font-size: 15px;
      
       
       color: white;
-      @include respond(phone){
+      @include respond(tab-port){
        font-size: 15px;
-    
+       padding: 5px 10px;
         width: 90vw;
         
        };
@@ -36,7 +40,7 @@ font-size: 1.5rem;
         &:hover{
           
         }
-        @include respond(phone){
+        @include respond(tab-port){
           display: none
       
           
@@ -46,18 +50,18 @@ font-size: 1.5rem;
  
 }
 .showCase__sec {
-  height:100vh;
+  height:900px;
   //background-image: linear-gradient(white 35%, #b4b3fd69);
  // border-bottom: 1px solid rgba($color: #000000, $alpha: 0.6);
- @include respond(phone){
+ @include respond(tab-port){
   height:93vh;
 };
  background: #5F5CFE;
 
   .showCase {
-    height: 75vh;
-    @include respond(phone){
-      height:50vh;
+    height: 118vh;
+    @include respond(tab-port){
+      height:60vh;
     };
     //border-bottom: 1px solid rgba($color: #000000, $alpha: 0.6);
   }
@@ -75,7 +79,7 @@ font-size: 1.5rem;
        margin-top: 10px;
        font-weight: normal;
        margin-bottom: 40px;
-       @include respond(phone){
+       @include respond(tab-port){
       text-align: center;
       font-size: 15px;
       width: 80%;
@@ -83,8 +87,8 @@ font-size: 1.5rem;
       };
     }
     img{
-      width: 30rem;
-      @include respond(phone){
+      width: 26rem;
+      @include respond(tab-port){
         width: 180px
         
        };
@@ -98,19 +102,24 @@ font-size: 1.5rem;
 .navigation {
   justify-content: space-between;
   border-bottom: 1px solid #e9e9e9;
-  margin-top: 1rem;
-
+ position: fixed;
+ width: 100vw;
+ left: 0;
+ background-color: #ffffff;
+ top: 0;
+ padding: 5px 40px;
+z-index: 222;
   &__name {
   }
   &__logo {
-    margin-left: 28rem;
+    margin-left: 18rem;
     h4{
-      @include respond(phone){
+      @include respond(tab-port){
         margin: 20px 0;
         display: none
        };
     }
-    @include respond(phone){
+    @include respond(tab-port){
       margin: 20px 0;
       display: none
      };
@@ -123,6 +132,7 @@ font-size: 1.5rem;
   }
   &__nav {
     &--ul {
+      margin-bottom: 0 !important;
     }
     &--li {
       text-transform: uppercase;
@@ -131,7 +141,7 @@ font-size: 1.5rem;
        a{
       color: #000000;
       text-decoration: none;
-      @include respond(phone){
+      @include respond(tab-port){
         font-size: 10.5px
         
        };
@@ -146,24 +156,35 @@ font-size: 1.5rem;
 }
 .moun--pronounce{
   font-size: 1.3rem;
-  padding: 10px 0;
-  margin-top: -53px;
+  padding: 0 0;
+  margin-top: -30px;
   
   font-family: RecklessTRIAL, serif;
   font-weight: normal;
    font-style: normal;
-   @include respond(phone){
+   @include respond(tab-port){
     margin-top: 0;
-
+  flex-direction: column;
+  align-items: flex-start!important;
+  padding: 0 10px
     
    };
+   img{
+     margin-bottom: 0;
+    margin-right: 6px;
+
+   }
   p{
-    margin: 0 6px;
+    margin-right: 6px;
     color: #ffffff;
+    margin-bottom: 0;
+    font-size: 15px;
     
   }
   .moun{
-    font-weight: bold;
+   
+    font-size: 25px;
+    font-family: 'Oscar',sans-serif;
   }
   .moun--des{
     color: rgba($color: #fffefe, $alpha: 1);
@@ -171,9 +192,9 @@ font-size: 1.5rem;
    font-family: RecklessTRIAL, serif;
    font-weight: normal;
     font-style: normal;
-    @include respond(small-phone){
-      white-space: nowrap
-   
+    @include respond(tab-port){
+      white-space: nowrap;
+      font-size: 12.5px
      };
   }
 }

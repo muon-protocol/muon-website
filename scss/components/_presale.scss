@@ -1,6 +1,6 @@
 .presale{
     flex-direction: column-reverse;
-    max-width: 130rem;
+    max-width: 1200px;
     overflow: auto;
     margin: 0 auto;
 }
@@ -18,10 +18,16 @@ a{
     margin-top: 50px;
     width: 111rem;
     font-size: 1.7rem!important;
-    
+    @include respond(tab-port){
+        font-size: 1.7rem !important;
+        margin-left: 560px;
+        margin-bottom: 25px;
+     };
+   
     thead th{
         border: none;
         font-weight: bold!important;
+        text-align: inherit;
     }
     tr th{
         font-weight: normal;

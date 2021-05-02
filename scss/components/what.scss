@@ -1,24 +1,31 @@
 .What-sec {
   .what {
-    padding: 90px 90px;
-    border-bottom: 1px solid #CECECE;
+    padding: 121px 10px;
+    border-bottom: 2px solid #8c8989;
     position: relative;
+    align-items: flex-start;
+    padding-bottom: 226px;
+    .Moun__cap{
+      margin-top: -6px !important;
+      line-height: 1.2;
+    }
     @include respond(tab-port){
       padding: 40px 10px;
-      width: 90%;
+     
       margin-top: 20px;
   
   
    };
     @include respond(phone){
       flex-direction: column;
-     
+      
      };
     &__text {
       p{
-        width: 79%;
-        font-size: 1.7rem;
-        margin-top: 20px;
+        width: 91%;
+        font-size: 17px;
+        margin-top: 12px;
+        line-height: 1.4;
         @include respond(phone){
           width: 100%;
          
@@ -90,18 +97,21 @@
   align-items: center!important;
 }
 .stack-token--img{
-  width: 27rem!important;
-  margin-right: 40px;
+ 
+      width: 25rem !important;
+   
+    margin-left: 138px;
   @include respond(tab-port){
-    width: 100%!important;
+    width: 245px!important;
     margin-right: 0;
-
+        margin-left: 0;
+    
   };  
 }
 .pythia__Cap{
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 10px;
   font-size: 12.5px;
   font-family: RecklessTRIAL, serif;
   //font-weight: 400;

@@ -7,7 +7,8 @@
     border-bottom: 1px solid #CECECE;
     @include respond(tab-land){
       grid-template-columns: repeat(2,1fr);
-      padding: 50px 0;
+  
+      padding: 50px 20px;
      };
      @include respond(phone){
         grid-template-columns: repeat(1,1fr)
@@ -64,7 +65,7 @@
     }
 }
 .roadmap-header{
-    padding-top: 50px;
+    padding-top: 110px;
     h2{
         text-transform: uppercase;
         font-size: 3.5rem;

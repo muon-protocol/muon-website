@@ -46,7 +46,7 @@ body {
     };
 }
 .container{
-    max-width: 130rem;
+    max-width: 1200px;
     margin: 0 auto;
   
     @include respond(tab-land){

@@ -1,5 +1,5 @@
 .blockchain__text{
-    width: 44%!important;
+    width: 35%!important;
     @include respond(tab-port){
         width: 66%!important;
         @include respond(big-phone){
@@ -10,6 +10,9 @@
         font-family: RecklessTRIAL, serif;
        //font-weight: 400;
         font-style: italic;
+    }
+    .name{
+      font-size: 13px;
     }
 }
 .blockchain__image{
@@ -25,4 +28,7 @@
      @include respond(big-phone){
         margin-right: 0
       };
+}
+.blockchain__sec{
+  background-color: #F3F3FF;
 }

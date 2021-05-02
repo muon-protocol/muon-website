@@ -47,3 +47,32 @@
        
        };
 }
+.moun__sdk{
+    .sdk__text.moun__sdk--text {
+        margin-right: 215px;
+        margin-left: 0;
+        @include respond(tab-port){
+            margin-right: 0;
+        margin-left: 0;
+    
+    
+           
+           };
+    }
+}
+.sdk__text.moun__token {
+    margin-right: 215px;
+    margin-left: 0;
+    @include respond(tab-port){
+      
+        margin-right: 0;
+        margin-left: 0;
+      };  
+}
+.sdk__text.Economi__list.moun__token {
+    @include respond(tab-port){
+      
+        margin-right:42px;
+        margin-left: 0;
+      };  
+}

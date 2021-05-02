@@ -2,11 +2,11 @@
     
     
     .sdk{
-        padding: 9rem 9rem;
+        padding: 126px 0px;
         border-bottom: 1px solid #CECECE;
         display: flex;
         align-items: flex-start;
-        justify-content: space-between;
+       
         @include respond(tab-port){
             flex-direction: column-reverse;
             align-items: center;
@@ -24,10 +24,12 @@
         }
         &__text{
             width: 40%;
+            margin-left: 215px;
+
             @include respond(tab-port){
                 width: 90%;
-                margin-top: 20px;
-            
+                margin-top: 30px;
+                margin-left: 0;
              //   margin-left: 29px;
              };
              @include respond(small-phone){
@@ -40,8 +42,9 @@
                
             }
             p{
-                font-size: 1.7rem;
-                margin-top: 10px;
+                font-size: 17px;
+                margin-top: 16px;
+                line-height: 1.4;
                 @include respond(tab-port){
                     font-size: 15px;
                   };  
@@ -54,8 +57,12 @@
     background-color: #E8E8FA;
  .feature__moun--text{
     width: 40%!important;
+    margin-right: 215px;
+    margin-left: 0;
     @include respond(tab-port){
         width: 100%!important;
+        margin-right: 0;
+        margin-left: 0;
       };  
  }
 }
