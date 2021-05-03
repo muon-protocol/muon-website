@@ -313,7 +313,9 @@ $breakpoint arguement choices
   src: url("/assets/font/reckless/RecklessTRIAL-Regular.otf") format("ttf"), url("/assets/font/reckless/RecklessTRIAL-RegularItalic.otf") format("ttf"); }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -979,3 +981,12 @@ a {
      /* height: 867px; */
    }
   }
+
+.jss2 {
+  width: 21px !important;
+  border: none !important;
+  height: 20px !important;
+  margin-top: -8px !important;
+  margin-left: -12px !important;
+  background-color: #5551FF !important;
+}
