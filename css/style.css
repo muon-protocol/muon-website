@@ -124,7 +124,22 @@ $breakpoint arguement choices
   top: 0;
   height: 55px;
   padding: 5px 46px;
-  z-index: 222; }
+  z-index: 222;
+}
+.nav-items {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-items .navigation__logo {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
   @media (max-width: 56.25em) {
     .navigation {
       padding-left: 13px !important;
@@ -145,12 +160,12 @@ $breakpoint arguement choices
       height: 20px;
     }
   }
-  .navigation__logo {
+  /* .navigation__logo {
     margin-left: 28rem; }
     .navigation__logo h4 {
       font-size: 15px;
       line-height: 18px;
-    }
+    } */
     @media (max-width: 56.25em) {
       .navigation__logo h4 {
         margin: 20px 0;
