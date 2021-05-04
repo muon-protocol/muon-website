@@ -232,7 +232,7 @@ $breakpoint arguement choices
     @media (max-width: 56.25em) {
       .moun--pronounce .moun--des {
         white-space: nowrap;
-        font-size: 12.5px; } }
+        font-size: 10.5px; } }
 
 .header__cap-flex {
   justify-content: space-between;
@@ -885,6 +885,11 @@ a {
     padding-bottom: 15rem;
     border-bottom: 1px solid #CECECE;
     height: 34rem; }
+    @media (max-width: 37.5em) {
+      .roadmap__ul {
+        padding-bottom: 37rem;
+      }
+    }
   .roadmap__li {
     margin: 10px 15px; }
   .roadmap__card {
