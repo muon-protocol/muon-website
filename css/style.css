@@ -278,6 +278,11 @@ img.center.footer-logo--img3 {
   height: 93px;
 }
 
+.navigation__nav {
+  position: absolute;
+  right: 0;
+}
+
 .navigation__nav--li {
   text-transform: uppercase;
   margin: 0 10px; }
