@@ -647,6 +647,11 @@
   color: #313144;
 }
 
+.container .distribution .left .main-title .after {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
 .container .distribution .left .details {
   color: #313144;
   margin-top: 40px;
