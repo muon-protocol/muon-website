@@ -1,0 +1,91 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 100;
+    .content {
+        max-width: 1200px;
+        padding: 0 10px;
+        margin: auto;
+        height: 55px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        .logo {
+            cursor: pointer;
+            height: 32px;
+            z-index: 2;
+        }
+        .is-now {
+            position: absolute;
+            right: 0;
+            left: 0;
+            text-align: center;
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            color: #313144;
+        }
+    }
+    nav {
+        z-index: 2;
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            li {
+                margin-left: 30px;
+                height: 17px;
+
+                .discord {
+                    &:hover {
+                        svg {
+                            path {
+                                transition: 0.2s all;
+                                fill: #8c9eff;
+                            }
+                        }
+                    }
+                }
+                .medium {
+                    &:hover {
+                        svg {
+                            path {
+                                transition: 0.2s all;
+                                fill: #888888;
+                            }
+                        }
+                    }
+                }
+
+                .twitter {
+                    &:hover {
+                        svg {
+                            path {
+                                transition: 0.2s all;
+                                fill: #55aded;
+                            }
+                        }
+                    }
+                }
+
+                .telegram {
+                    &:hover {
+                        svg {
+                            path {
+                                transition: 0.2s all;
+                                fill: #26a6e6;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

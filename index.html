@@ -1,768 +1,765 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://use.typekit.net/ixr2weo.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="/static/css/main.6cb87c4a.chunk.css" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon_package_v0/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x515" href="./assets/favicon_package_v0/android-chrome-512x512.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_package_v0/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_package_v0/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="150x150" href="./assets/favicon_package_v0/mstile-150x150.png">
-    <link rel="icon" type="image/svg" href="./assets/favicon_package_v0/safari-pinned-tab.svg">
-    <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="./assets/favicon_package_v0/apple-touch-icon.png">
-    <link rel="icon" href="./assets/favicon_package_v0/favicon.ico">
-    <link rel="manifest" href="./assets/favicon_package_v0/site.webmanifest">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/jquery.terminal.min.css" />
+    <link rel="stylesheet" href="scss/base/base.css" />
+    <link rel="stylesheet" href="scss/components/navbar.css" />
+    <link rel="stylesheet" href="scss/components/footer.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,400,300' rel='stylesheet'>
+    <link rel="stylesheet" href="scss/main.css" />
+    <link rel="stylesheet" href="scss/responsive.css" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x515" href="assets/favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="150x150" href="assets/favicon/mstile-150x150.png">
+    <link rel="icon" type="image/svg" href="assets/favicon/safari-pinned-tab.svg">
+    <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" href="assets/favicon/favicon.ico">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
     <title>Muon</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="navigation d-flex">
-          <div class="nav-items">
-            <div class="navigation__name">
-              <img src="assets/image/svg/name.svg" alt="Word SVG" class="name-svg" />
-            </div>
-            <div class="navigation__logo">
-              <!-- <img
-                src="assets/image/svg/word.svg"
-                alt="Word SVG"
-                class="word-svg"
-              />
-              <img
-                src="assets/image/svg/logo.svg"
-                alt="Logo SVG"
-                class="logo-svg"
-              /> -->
-              <h4 class="">MUON IS NOW</h4>
-            </div>
-            <nav class="navigation__nav">
-              <ul class="navigation__nav--ul list d-flex">
-                <li class="navigation__nav--li"><a href="https://twitter.com/muon_net" target="_blank"
-                    class="navigation__nav--link">twitter</a></li>
-                <li class="navigation__nav--li"><a href="https://t.me/muon_net" target="_blank"
-                    class="navigation__nav--link">telegram</a></li>
-                <li class="navigation__nav--li"><a href="https://medium.com/muon" target="_blank"
-                    class="navigation__nav--link">medium</a></li>
-                <li class="navigation__nav--li"><a href="https://discord.gg/rcK4p8g7Ce" target="_blank"
-                    class="navigation__nav--link">discord</a></li>
-  
-              </ul>
+</head>
+
+<body>
+    <header>
+        <div class="content">
+            <a class="logo" onclick="jump('muon-network')">
+                <img src="assets/image/svg/nav-icons/muon.svg" alt="Muon" class="logo" />
+            </a>
+            <div class="is-now">MUON IS NOW</div>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="twitter" href="https://twitter.com/muon_net" target="_blank">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.6367 4.59375C17.3398 4.06641 17.9727 3.43359 18.4648 2.69531C17.832 2.97656 17.0938 3.1875 16.3555 3.25781C17.1289 2.80078 17.6914 2.09766 17.9727 1.21875C17.2695 1.64062 16.4609 1.95703 15.6523 2.13281C14.9492 1.39453 14 0.972656 12.9453 0.972656C10.9062 0.972656 9.25391 2.625 9.25391 4.66406C9.25391 4.94531 9.28906 5.22656 9.35938 5.50781C6.30078 5.33203 3.55859 3.85547 1.73047 1.64062C1.41406 2.16797 1.23828 2.80078 1.23828 3.50391C1.23828 4.76953 1.87109 5.89453 2.89062 6.5625C2.29297 6.52734 1.69531 6.38672 1.20312 6.10547V6.14062C1.20312 7.93359 2.46875 9.41016 4.15625 9.76172C3.875 9.83203 3.52344 9.90234 3.20703 9.90234C2.96094 9.90234 2.75 9.86719 2.50391 9.83203C2.96094 11.3086 4.33203 12.3633 5.94922 12.3984C4.68359 13.3828 3.10156 13.9805 1.37891 13.9805C1.0625 13.9805 0.78125 13.9453 0.5 13.9102C2.11719 14.9648 4.05078 15.5625 6.16016 15.5625C12.9453 15.5625 16.6367 9.97266 16.6367 5.08594C16.6367 4.91016 16.6367 4.76953 16.6367 4.59375Z"
+                                    fill="#313144" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a class="telegram" href="https://t.me/muon_net" target="_blank">
+                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.3047 1.73047C16.5156 0.746094 15.9531 0.359375 15.3203 0.605469L1.32812 5.98438C0.378906 6.37109 0.414062 6.89844 1.1875 7.14453L4.73828 8.23438L13.0352 3.03125C13.4219 2.75 13.8086 2.92578 13.4922 3.17188L6.77734 9.21875L6.53125 12.9102C6.91797 12.9102 7.05859 12.7695 7.26953 12.5586L8.99219 10.8711L12.6133 13.543C13.2812 13.9297 13.7734 13.7188 13.9492 12.9453L16.3047 1.73047Z"
+                                    fill="#313144" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li> <a class="medium" href="https://medium.com/muon" target="_blank">
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.99609 3.27734V10.8008C3.03125 11.0469 2.96094 11.3281 2.78516 11.5391L0.992188 13.6836V13.9648H6.05469V13.6836L4.26172 11.5391C4.05078 11.3281 3.98047 11.0469 4.01562 10.8008V4.29688L8.44531 14H8.97266L12.8047 4.29688V11.9961C12.8047 12.207 12.8047 12.2422 12.6641 12.3828L11.293 13.7188V14H17.9727V13.7188L16.6367 12.418C16.5312 12.3477 16.4609 12.1719 16.4961 12.0312V2.46875C16.4609 2.32812 16.5312 2.1875 16.6367 2.11719L17.9727 0.816406V0.5H13.2969L9.92188 8.86719L6.125 0.5H1.20312V0.816406L2.78516 2.71484C2.92578 2.85547 3.03125 3.06641 2.99609 3.27734Z"
+                                    fill="#313144" />
+                            </svg>
+
+                    </li>
+                    <li> <a class="discord" href="https://discord.gg/rcK4p8g7Ce" target="_blank">
+                            <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0664 8.82812C11.0664 8.26562 10.6445 7.80859 10.1523 7.80859C9.625 7.80859 9.20312 8.26562 9.20312 8.82812C9.20312 9.35547 9.625 9.8125 10.1523 9.8125C10.6445 9.8125 11.0664 9.35547 11.0664 8.82812ZM6.84766 7.80859C6.35547 7.80859 5.93359 8.26562 5.93359 8.82812C5.93359 9.35547 6.35547 9.8125 6.84766 9.8125C7.375 9.8125 7.76172 9.35547 7.76172 8.82812C7.79688 8.26562 7.375 7.80859 6.84766 7.80859ZM16.375 2.11328C16.375 1.09375 15.5312 0.25 14.5117 0.25H2.45312C1.43359 0.25 0.625 1.09375 0.625 2.11328V14.2773C0.625 15.332 1.43359 16.1406 2.45312 16.1406H12.6484L12.1914 14.4883C14.8281 16.9141 14.0898 16.2812 16.375 18.25V2.11328ZM13.8086 10.6562C13.8086 10.6562 13.0352 11.957 11.0312 12.0273C11.0312 12.0273 10.7148 11.6406 10.4336 11.2891C11.6289 10.9727 12.0859 10.2344 12.0859 10.2344C11.6992 10.4805 11.3477 10.6211 11.0312 10.7617C9.09766 11.5703 6.95312 11.2891 5.40625 10.4453C5.40625 10.4102 5.19531 10.3047 5.05469 10.1992C5.05469 10.1992 5.47656 10.9375 6.63672 11.2891C6.35547 11.6055 6.03906 12.0273 6.03906 12.0273C4.03516 11.957 3.29688 10.6562 3.29688 10.6562C3.29688 7.73828 4.5625 5.41797 4.5625 5.41797C5.86328 4.43359 7.09375 4.46875 7.09375 4.46875L7.19922 4.57422C5.58203 5.03125 4.84375 5.73438 4.84375 5.73438C4.84375 5.73438 5.01953 5.62891 5.37109 5.48828C7.44531 4.57422 9.94141 4.57422 12.0859 5.73438C12.0859 5.73438 11.3828 5.06641 9.83594 4.60938L9.97656 4.46875C9.97656 4.46875 11.207 4.43359 12.5078 5.41797C12.5078 5.41797 13.8086 7.73828 13.8086 10.6562Z"
+                                    fill="#313144" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </nav>
-          </div>
         </div>
-      </div>
-  
     </header>
-    <section class="showCase__sec">
-      <div class="container">
-        <div class="showCase center">
-          <div class="showcase__content">
-           
-              <img src="/assets/image/svg/MuonNetwork.svg" alt="showcase">
-              <h1>muon network</h1>
-              <h3 class="showcase__content--h3">An elementary node layer to decentralized systems.</h3>
-            
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="moun--pronounce d-flex bd-highlight">
-          <p class="moun bd-highlight">Muon</p> 
-          <div class="d-flex bd-highlight">
-            <p class="pronounce">/mjuːɒn/ </p>
-            <img src="/assets/image/svg/play.svg" alt="">
-            <p class="moun--des">( from the Greek letter mu (μ) used to represent it) </p>
-          </div>
-          
-          <a onclick="jump()" class="ml-auto mb-0 bd-highlight d-md-block d-none"> LEARN MORE ↓ </a>
-        </div>
-        <div class="header__caption d-md-block d-none">
-          <p> 
-            Muon is a decentralized Nodes as a service Network that enables running Web 2.0 and web3 applications, off-chain, on-chain, and cross-chain. 
-          </p>
-          <div class="header__cap-flex">
-            <p>
-              Our elementary node layer allows  smart contracts to securely perform complex computations in common programming languages at zero gas cost. Building oracles and cross-chain bridges through secure off-chain computation has never been as easy and secure.
-            </p>
-          </div>
-        </div>
+    <main class="main">
 
-        <div class="header__caption d-md-none d-block">
-
-          <p>
-            A decentralized “Nodes as a service” Network
-          </p>
-          <div class="header__cap-flex">
-            <p>
-              Muon is an elementary layer zero solution turning blockchain technologies into an ecosystem. The muon protocol, like an elementary particle,  is one of the elementary building blocks of our new decentralized world. It consists of a large number of nodes that sign valuable data upon  request and push sensitive data to blockchains, it is basically an baseprotocol to create interoperability and oracle services.  We imagine the world computer like this: Ethereum is the immutable and static data storage (ROM), while muon mimics random access memory + computing processing units (RAM + CPU).
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <section class="sdk-sec blockchain__sec" id="learn-more">
-      <div class="container">
-        <div class="sdk Moun__fig">
-          <div class="sdk__image blockchain__image center">
-            <img src="./assets/image/svg/worldComputer.svg" />
-          </div>
-          <div class="sdk__text blockchain__text Muon-Fig-h2">
-            <h2>Combined with other blockchains, Muon is the ultimate decentralized trustable world-computer</h2>
-            <p>
-              “Imagine the ideal protocol. It would have the most trustworthy third party imaginable — a deity who is on everybody’s side. All the parties would send their inputs to God. God would reliably determine the results and return the outputs. 
-            </p>
-          
-          <p>
-            
-            God being the ultimate in confessional discretion, no party would learn anything more about the other parties’ inputs than they could learn from their own inputs and the output.” 
-            <br>
-            <br>
-              <span class="name">Nick Szabo - 1997</span>
-          </p>
-          </div>
-         
-        </div>
-      </div>
-    </section>
-    <section class="sdk-sec feature__moun-sec ">
-      <div class="container">
-        <div class="sdk feature__moun">
-          <div class="sdk__text feature__moun--text">
-            <h2 style="color: #5551FF;">Muon</h2>
-            <p class="Moun__cap">
-              The Future of Interoperability <br> and Instantaneous Data Access
-            </p>
-            <p>
-              Muon natively connects all applications on all chains 
-              with the off-chain world.  Muon fills the gaps between different networks through a sonar-like system of decentralized autonomous nodes, which can speak and understand any language. 
-              
-            </p>
-            <p>
-              Muon nodes communicate, read and transmit data to any chain quickly, efficiently, and securely. Building oracles, bridges, or off-chain workers has never before been as decentralized, easy, and secure as with Muon.
-            </p>
-          </div>
-          <div class="sdk__image">
-            <img class="realworl-img" src="./assets/image/svg/realWorldData.svg" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="What-sec grey__bg">
-      <div class="container">
-        <div class="what d-flex">
-          <div class="what__text">
-            <h2 class="what__text--h2" style="color: #8F00FF;">
-              μPythia 
-             </h2>
-             <p class="Moun__cap">
-               Pioneering Supercharged Oracle Tech
-               
-               Built with Muon 
-               
-             </p>
-            <p>
-              Connecting blockchain to external data sources is effortless, thanks to Muon’s elementary layer-0 nature.  On the right is a demo application of a Muon-based oracle called “μPythia”.
-            </p>
-            <p>
-              Developed in 14 days by our core team as a showcase of Muon’s velocity, “μPythia” can generate production-ready signatures in under 300 milliseconds. Faster than any other blockchain-based oracle solution, it’s already being used in production by DEUS Finance.
-            </p>
-
-          </div>
-          <a class="what__image" href='demo.html'>
-            <!-- <div class="what__image--editor">
-              <div class="what__image--editor--head">init.pythia</div>
-              <div class="what__image--editor--body">
-                <p>anon:init_pythia node0$ |</p>
-              </div>
-            </div> -->
-           <img src="assets/image/png/terminal.png" />
-          </a>
-
-
-          <p class="pythia__Cap">*during trading hours of the NYSE</p>
-        </div>
-      </div>
-    </section>
-    <section class="feature__sec grey__bg">
-      <div class="container">
-        <div class="feature d-flex">
-          <div class="feature__image">
-            
-            <img src="/assets/image/png/triangle.png" />
-         
-          </div>
-          <div class="feature__content">
-            <div class="feature__content--text">
-              <h4>Trust</h4>
-              <p>
-                Following a <span class="purple-text">web3 request</span> and data claim, the subsequent verification process begins. The Muon network nodes will internally verify the data that the oracle has signed and unlock node collateral, if there were no disputes.
-              </p>
-            </div>
-            <div class="feature__content--text">
-              <h4>speed</h4>
-              <p>
-                As soon as the user requests data in a dApp, an HTTPs demand is sent to the Muon Node network. Almost immediately [~300ms] the user gets a response with signatures which merges with their transaction into a message, on any EVM chain. Verifiable by your smart contract.
-              </p>
-            </div>
-            <div class="feature__content--text">
-              <h4>Composability</h4>
-              <p>
-                
-
-                Application classes are predefined, and every app can customize its class for the fully immersive dApp solution  on any chain. Muon is a fully <span class="purple-text">customizable layer-0</span> solution and entirely chain-agnostic.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="sdk-sec">
-      <div class="container">
-        <div class="sdk moun__sdk">
-          <div class="sdk__text moun__sdk--text">
-            <h2>MUON SDK
-            </h2>
-            <p class="Moun__cap">
-A Muon JS library will be provided for developers to implement Muon into their DApps with ease.
-
-
-            </p>
-            <p>
-              This will enable developers to use Muon’s decentralized nodes as a service. 
-
-            </p>
-            <p>
-              First off the blocks, DEUS finance has already built a Muon based oracle for providing live prices of stocks.
-
-            </p>
-          </div>
-          <div class="sdk__image">
-            <img src="/assets/image/svg/SDK.svg" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="sdk-sec">
-      <div class="container">
-        <div class="sdk Mounnodes">
-          <div class="sdk__image">
-            <img src="/assets/image/png/Nodes.png" />
-          </div>
-          <div class="sdk__text">
-            <h2  style="color: #FFA451;">MUON </h2>
-            <p class="Moun__cap">
-              A decentralized node network. 
-            </p>
-            <p>
-              Muon nodes run on a proof of stake like consensus & can have one or several roles. Collateralized nodes sign data and push it to the blockchain. Other nodes observe the data on blockchains and place disputes wherever they see anomalies.
-            </p>
-            <p>
-              Nodes can also take a hosting role and use IPFS to save <br> the data. They can also become a decentralized cloud  <br> computer.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="featureusecase-se ">
-      <div class="container">
-        <div class="featureusecase">
-           <div class="featureusecase-head center">
-              <h2 > LIMITLESS OPPORTUNITIES 
-              <br>  OF MUON PROTOCOL </h2>
-           </div>
-           <div class="featureusecase__content">
-                <div class="featureusecase__content--box">
-                  <img src="/assets/image/png/Fig4.png" />
-                   <h3>
-                    μRC20 TOKENS
-                   </h3>
-                   <p>A new μRC20 token standard. μRC20 tokens exist on multiple chains with their balances and transactions being saved on all chains simultaneously. 
-
-                 
-                    </p>
-                    <br>
-                    <p>   Muon nodes synthesize all the data from all chains before allowing a transaction to run or fail.</p>
+        <div class="container bg-f8">
+            <div class="content muon-network" id="muon-network">
+                <div class="top d-flex-col">
+                    <div class="muon-icon">
+                        <img src="assets/image/svg/muon-logo.svg" alt="MuonNetwork">
+                    </div>
+                    <div class="muon-name">
+                        <img src="assets/image/svg/muon-network.svg" alt="MuonNetwork">
+                    </div>
+                    <p class="elementary">An elementary node layer to decentralized systems.</p>
                 </div>
-                <div class="featureusecase__content--box">
-                  <img src="/assets/image/png/Fig5.png" />
+                <div class="down">
 
-                  <h3>
-                    HIGH-LEVEL APPS
-                  </h3>
-                  <p>Muon protocol allows high-level apps, built in Java or Python, to run in a decentralized manner and to push their final data to blockchain. 
+                    <div class="pronounce-wrap">
+                        <div class="title">
+                            <div class="first">
+                                <p class="muon">Muon</p>
+                                <p class="pronounce">/mjuːɒn/ </p>
+                                <img src="assets/image/svg/play.svg" alt="">
+                            </div>
+                            <p class="represent">( from the Greek letter mu (μ) used to represent it) </p>
+                        </div>
+                        <a class="learn-more" onclick="jump('combined')"> LEARN MORE ↓</a>
+                    </div>
+                    <div class="description">
+                        <div class="item">
+                            Muon is a decentralized Nodes as a service Network that enables running Web
+                            2.0 and web3 applications, off-chain,
+                            on-chain, and cross-chain.
+                        </div>
+                        <div class="item">
+                            Our elementary node layer allows smart contracts to securely perform complex computations in
+                            common programming
+                            languages at zero gas cost.
+                        </div>
+                        <div class="item">
+                            Building oracles and cross-chain bridges through secure off-chain computation has never been
+                            as easy and secure.
+                        </div>
+                    </div>
 
-                    
-                   </p>
-                   <p>  An instance would be enabling machine learning strategies using AI for DeFi dApps that push their data to blockchains. 
-                  </p>
-                  <p>  Imagine having machine learning algorithms empowering yield aggregators like yearn.finance in a decentralized and secure way.
-                  </p>
-               </div>
-               <div class="featureusecase__content--box">
-                <img src="/assets/image/png/Fig6.png" />
 
-                <h3>
-                  LIGHTNING NETWORKS
-                </h3>
-                <p>Similar to Bitcoin’s lightning network, Muon merges small transactions and pushes data to blockchains periodically or upon request. 
-                 
-                  
-                 <br>
-                 <p> This enables fast, low-cost payment solutions that are decentralized and secure with their data on blockchains.</p>
-                 <p>  Muon can also be a base layer protocol, where Layer-2 solutions are able to proliferate.</p>
-                </p>
-             </div>
-           </div>
-           
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-    <section class="sdk-sec pink-bg ">
-      <div class="container">
-        <div class="sdk align-center">
-          <div class="sdk__text moun__token">
-            <h2 class="d-md-block d-none">MUON TOKEN</h2>
-            <h2 class="d-md-none d-block">μUON TOKEN</h2>
-            <p  >
-              Muon token is the building block of the entire ecosystem and acts as a vehicle of service. 
 
-            </p>
-            <p>
-             
-             Muon token will be the first implementation of the  <br><span class="blue-text"> μRC20</span> token standard. It will exist on multiple chains with its balances and transactions being saved simultaneously on all chains.
-            </p>
-            <p>
-              Muon nodes <span class="blue-text">check user balances spanning the chains</span>  before allowing a transaction to run or fail.
+        <div class="split1 bg-f8" id="combined"></div>
 
-            </p>
-            <p>  
-           Muon token covers the transaction and infrastructure cost to nodes. It is sent along with the request for data to pay the node for verifying that data.
-            </p>
-          </div>
-          <div class="sdk__image">
-            <img class="stack-token--img" src="/assets/image/png/token-stack.png" />
-          </div>
+        <div class="container">
+            <div class="content combined ">
+                <div class="left">
+                    Combined with other blockchains, Muon is the ultimate decentralized trustable world-computer
+                </div>
+                <div class="right">
+                    <div class="text-contrainer">
+                        <p>
+                            “Imagine the ideal protocol. It would have the most trustworthy third party imaginable — a
+                            deity who is on
+                            everybody’s side. All the parties would send their inputs to God. God would reliably
+                            determine the results
+                            and return the outputs.
+                        </p>
+                        <br>
+                        <p>
+                            God being the ultimate in confessional discretion, no party would learn anything more about
+                            the other
+                            parties’ inputs than they could learn from their own inputs and the output.”
+                            <br>
+                            <br>
+                            <span class="name">Nick Szabo - 1997</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
-    </section>
-    <!-- <section class="MounToken-sec">
-      <div class="container">
-        <div class="MounToken">
-          <h2>MUON Token</h2>
-          <div class="MounToken__image center">
-            <img src="/assets/image/svg/MounToken.svg" alt="" />
-          </div>
-          <div class="MounToken__text">
-            <p>
-              The Muon token is the building block of the whole ecosystem and
-              acts as the vehicle of service. It is the first implementation of
-              the <span>μRC20</span> token standard. A token that is on multiple chains with
-              its balances and transactions being saved on multiple chains. Muon
-              nodes <span>combine all data from all chains</span> before allowing a
-              transaction to run or fail.
-              <br>
-             
-            </p>
-            <p style="margin-top: 10px;">
-              Muon token covers
-              transaction/infrastructure cost to nodes, it is sent along with
-              the request for the data in order for the node to do the actual
-              verification process.
-            </p>
-          </div>
+
+        <div class="container bg-ff">
+            <div class="content data-access">
+                <div class="left">
+                    <div class="main-title"> Muon </div>
+                    <div class="sub-desc"> The Future of Interoperability and Instantaneous Data Access </div>
+                    <div class="details">
+                        Muon natively connects all applications on all chains with the off-chain world. Muon fills the
+                        gaps between different
+                        networks through a sonar-like system of decentralized autonomous nodes, which can speak and
+                        understand any language.
+                        <br>
+                        <br>
+
+                        Muon nodes communicate, read and transmit data to any chain quickly, efficiently, and securely.
+                        Building oracles,
+                        bridges, or off-chain workers has never before been as decentralized, easy, and secure as with
+                        Muon.
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="assets/image/svg/real-world.svg" alt="real-world">
+                </div>
+            </div>
         </div>
-      </div>
-    </section> -->
-    <section class="sdk-sec pink-bg">
-      <div class="container">
-        <div class="sdk mtokenusecase">
-          <div class="sdk__image ">
-            <img src="/assets/image/svg/tokenUsecase.svg" />
-          </div>
-          <div class="sdk__text μtoken USECASE__text moun__sdk">
-            <h2>MUON TOKEN USE CASE
-            </h2>
-                <p >
-                  Muon token covers both the insurance and the infrastructure cost of the nodes.
-                </p>
-                <p>The transaction fee is used primarily to pay for the insurance of the node’s stake, which is used to verify the transaction, and also for the actual node infrastructure.
-                </p>
-                <p>
-                  The amount sent is divided between the nodes that process the transaction.
-                </p>
-                <p>
-                  The Muon protocol aims to be a low-cost decentralized infrastructure similar to AWS, rather than a common expensive blockchain infrastructure. 
 
-                </p>
-          </div>
-         
+        <div class="container bg-f8">
+            <div class="content pythia">
+                <div class="left">
+                    <div class="main-title"> μPythia </div>
+                    <div class="sub-desc"> Pioneering Supercharged Oracle Tech Built with Muon</div>
+                    <div class="details">
+                        Connecting blockchain to external data sources is effortless, thanks to Muon’s elementary
+                        layer-0
+                        nature. On the right
+                        is a demo application of a Muon-based oracle called “μPythia”.
+                        <br>
+                        <br>
+                        Developed in 14 days by our core team as a showcase of Muon’s velocity, “μPythia” can generate
+                        production-ready
+                        signatures in under 300 milliseconds. Faster than any other blockchain-based oracle solution,
+                        it’s
+                        already being used in
+                        production by DEUS Finance.
+                    </div>
+                </div>
+                <div class="terminal-wrap">
+                    <p class="live">Live μPythia demo:</p>
+                    <div class="card shadow">
+                        <div class="card-header text-center">init.pythia</div>
+                        <div class="card-body rounded-bottom-6" style="font-family: Monument Grotesk;cursor: pointer;"
+                            id="terminal">
+                        </div>
+                    </div>
+                    <p class="showcase">Live oracle showcase, try it out by typing TSLA into the console*</p>
+                    <p class="hours">only during NYSE Stock trading hours*</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-    <section class="sdk-sec economi-sec bluegrey-bg">
-      <div class="container">
-        <div class="sdk Mounnodes economi">
-         
-          <div class="sdk__text Economi__list moun__token ">
-            <h2> token distribution
 
-            </h2>
-            <ul class="Economi__ul">
-              <li class="Economi__li">
-                50% &nbsp;  Ecosystem Incentives / Node Rewards
-              </li>
-              <li class="Economi__li">
-                14% &nbsp; Team Tokens / 12-month cliff
-              </li>
-              <li class="Economi__li ">
-                14% &nbsp; Private Sales Rounds A, B, C
-              </li>
-              <li class="Economi__li">
-                11%  &nbsp; Project Development Fund
-              </li>
-              <li class="Economi__li">
-                6%  &nbsp; Strategic Investors
-              </li>
-              <li class="Economi__li">
-                5% &nbsp;  Initial Liquidity on Exchanges 
-              </li>
-             
+        <div class="container bg-f8">
+            <div class="content trust">
+                <div class="left">
+                    <img src="assets/image/svg/trust.svg" alt="trust">
+                </div>
+                <div class="right">
+                    <ul class="d-flex-col">
+                        <li>
+                            <p class="title">Trust</p>
+                            <p class="desc">Following a <span class="purple">web3 request </span> and data claim, the
+                                subsequent verification process
+                                begins. The Muon network nodes will
+                                internally verify the data that the oracle has signed and unlock node collateral, if
+                                there are no disputes.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="title">Speed</p>
+                            <p class="desc">
+                                As soon as the user requests data in a dApp, an HTTPs demand is sent to the
+                                Muon Node network. Almost immediately
+                                [~300ms] the user gets a response with signatures which merges with their transaction
+                                into a message, on any EVM chain.
+                                Verifiable by your smart contract.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="title">Composability</p>
+                            <p class="desc">
+                                Application classes are predefined, and every app can customize its class
+                                for the fully immersive dApp solution on any
+                                chain. Muon is a fully <span class="purple">customizable layer-0</span> solution and
+                                entirely chain-agnostic.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
 
-              
-            </ul>
-          </div>
-          <div class="sdk__image">
-            <img class="economi--img img-fluid d-md-block d-none" src="/assets/image/svg/static-chart.svg" style="width: 747px !important; height: 343px;" />
-            <img class="economi--img img-fluid d-md-none d-block" src="/assets/image/svg/TokenDistribution.svg" />
-          </div>
+            </div>
         </div>
-      </div>
-    </section>
-    <section >
-      <div id="root" style="border-bottom: 1px solid #CECECE; padding-top: 9rem; padding-bottom: 9rem;"></div>
-    </section>
-    <!-- <section class="sdk-sec">
-      <div class="container">
-        <div class="sdk">
-          <div class="sdk__text">
-            <h2>token CIRCULATION
 
-            </h2>
-            <p>
-              Inititally launching with a quite limited supply, muons will have incremental token releases over the next years. 
-              Ecosystem incentives will start incremental payouts to node hosters starting 3 months after launch. 
-             </p> 
-             <div class="Circulation__p">
-              <p> At launch: <span class="blue-text">678,000*</span></p>
-              <p>After 3  Months: <span class="blue-text">983,00</span></p>
-             <p> After 6 Months: <span class="blue-text">1,290,000</span></p>
-             </div>
-              
-            <ul class="CirculationList">
-                <li class="CirculationList__li d-flex">
-                  <div class="square square__blue">
+        <div class="container">
+            <div class="content join-us ">
+                <p class="want"> Want to be a part of Moun Network? </p>
+                <p class="join">Join the discussion!</p>
+                <ul class="d-flex">
+                    <li>
+                        <a href="https://twitter.com/muon_net" target="_blank">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.6367 4.59375C17.3398 4.06641 17.9727 3.43359 18.4648 2.69531C17.832 2.97656 17.0938 3.1875 16.3555 3.25781C17.1289 2.80078 17.6914 2.09766 17.9727 1.21875C17.2695 1.64062 16.4609 1.95703 15.6523 2.13281C14.9492 1.39453 14 0.972656 12.9453 0.972656C10.9062 0.972656 9.25391 2.625 9.25391 4.66406C9.25391 4.94531 9.28906 5.22656 9.35938 5.50781C6.30078 5.33203 3.55859 3.85547 1.73047 1.64062C1.41406 2.16797 1.23828 2.80078 1.23828 3.50391C1.23828 4.76953 1.87109 5.89453 2.89062 6.5625C2.29297 6.52734 1.69531 6.38672 1.20312 6.10547V6.14062C1.20312 7.93359 2.46875 9.41016 4.15625 9.76172C3.875 9.83203 3.52344 9.90234 3.20703 9.90234C2.96094 9.90234 2.75 9.86719 2.50391 9.83203C2.96094 11.3086 4.33203 12.3633 5.94922 12.3984C4.68359 13.3828 3.10156 13.9805 1.37891 13.9805C1.0625 13.9805 0.78125 13.9453 0.5 13.9102C2.11719 14.9648 4.05078 15.5625 6.16016 15.5625C12.9453 15.5625 16.6367 9.97266 16.6367 5.08594C16.6367 4.91016 16.6367 4.76953 16.6367 4.59375Z"
+                                    fill="white" />
+                            </svg>
 
-                  </div>
-                    <p>  Ecosystem Incentives  </p>
-                </li>
-                <li class="CirculationList__li d-flex">
-                  <div class="square square__red">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/muon_net" target="_blank">
+                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.3047 1.73047C16.5156 0.746094 15.9531 0.359375 15.3203 0.605469L1.32812 5.98438C0.378906 6.37109 0.414062 6.89844 1.1875 7.14453L4.73828 8.23438L13.0352 3.03125C13.4219 2.75 13.8086 2.92578 13.4922 3.17188L6.77734 9.21875L6.53125 12.9102C6.91797 12.9102 7.05859 12.7695 7.26953 12.5586L8.99219 10.8711L12.6133 13.543C13.2812 13.9297 13.7734 13.7188 13.9492 12.9453L16.3047 1.73047Z"
+                                    fill="white" />
+                            </svg>
 
-                  </div>
-                  <p>
-                    Private Sale A
+                        </a>
+                    </li>
+                    <li> <a href=" https://medium.com/muon" target="_blank">
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.49609 3.27734V10.8008C2.53125 11.0469 2.46094 11.3281 2.28516 11.5391L0.492188 13.6836V13.9648H5.55469V13.6836L3.76172 11.5391C3.55078 11.3281 3.48047 11.0469 3.51562 10.8008V4.29688L7.94531 14H8.47266L12.3047 4.29688V11.9961C12.3047 12.207 12.3047 12.2422 12.1641 12.3828L10.793 13.7188V14H17.4727V13.7188L16.1367 12.418C16.0312 12.3477 15.9609 12.1719 15.9961 12.0312V2.46875C15.9609 2.32812 16.0312 2.1875 16.1367 2.11719L17.4727 0.816406V0.5H12.7969L9.42188 8.86719L5.625 0.5H0.703125V0.816406L2.28516 2.71484C2.42578 2.85547 2.53125 3.06641 2.49609 3.27734Z"
+                                    fill="white" />
+                            </svg>
 
-                  </p>
-                </li>
-                <li class="CirculationList__li d-flex">
-                  <div class="square square__yellow">
+                        </a>
+                    </li>
+                    <li> <a href="https://discord.gg/rcK4p8g7Ce" target="_blank">
+                            <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0664 8.82812C11.0664 8.26562 10.6445 7.80859 10.1523 7.80859C9.625 7.80859 9.20312 8.26562 9.20312 8.82812C9.20312 9.35547 9.625 9.8125 10.1523 9.8125C10.6445 9.8125 11.0664 9.35547 11.0664 8.82812ZM6.84766 7.80859C6.35547 7.80859 5.93359 8.26562 5.93359 8.82812C5.93359 9.35547 6.35547 9.8125 6.84766 9.8125C7.375 9.8125 7.76172 9.35547 7.76172 8.82812C7.79688 8.26562 7.375 7.80859 6.84766 7.80859ZM16.375 2.11328C16.375 1.09375 15.5312 0.25 14.5117 0.25H2.45312C1.43359 0.25 0.625 1.09375 0.625 2.11328V14.2773C0.625 15.332 1.43359 16.1406 2.45312 16.1406H12.6484L12.1914 14.4883C14.8281 16.9141 14.0898 16.2812 16.375 18.25V2.11328ZM13.8086 10.6562C13.8086 10.6562 13.0352 11.957 11.0312 12.0273C11.0312 12.0273 10.7148 11.6406 10.4336 11.2891C11.6289 10.9727 12.0859 10.2344 12.0859 10.2344C11.6992 10.4805 11.3477 10.6211 11.0312 10.7617C9.09766 11.5703 6.95312 11.2891 5.40625 10.4453C5.40625 10.4102 5.19531 10.3047 5.05469 10.1992C5.05469 10.1992 5.47656 10.9375 6.63672 11.2891C6.35547 11.6055 6.03906 12.0273 6.03906 12.0273C4.03516 11.957 3.29688 10.6562 3.29688 10.6562C3.29688 7.73828 4.5625 5.41797 4.5625 5.41797C5.86328 4.43359 7.09375 4.46875 7.09375 4.46875L7.19922 4.57422C5.58203 5.03125 4.84375 5.73438 4.84375 5.73438C4.84375 5.73438 5.01953 5.62891 5.37109 5.48828C7.44531 4.57422 9.94141 4.57422 12.0859 5.73438C12.0859 5.73438 11.3828 5.06641 9.83594 4.60938L9.97656 4.46875C9.97656 4.46875 11.207 4.43359 12.5078 5.41797C12.5078 5.41797 13.8086 7.73828 13.8086 10.6562Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
 
-                  </div>
-                    <p>Private Sale B</p>
-                </li>
-                <li class="CirculationList__li d-flex">
-                  <div class="square square__green">
-
-                  </div>
-                    <p>
-                      Private Sale C
-                    </p>
-                </li>
-                <li class="CirculationList__li d-flex">
-                  <div class="square square__orange">
-
-                  </div>
-                    <p>
-                      Partners   
-                      </p>
-                </li>
-                <li class="CirculationList__li d-flex">
-                  <div class="square square__bluegreen">
-
-                  </div>
-                    <p>
-                      Marketing   
-                      </p>
-                </li>
-                <li class="CirculationList__li d-flex">
-                  <div class="square square__lightblue">
-
-                  </div>
-                    <p>
-                      Team   
-                      </p>
-                </li>
-                <li class="CirculationList__li d-flex">
-                  <div class="square square__pink">
-
-                  </div>
-                    <p>
-                      Initial Liquidity
-                    </p>
-                </li>
-            </ul>
-          </div>
-          <div class="sdk__image">
-            <img src="/assets/image/svg/TokenCirculation.svg" />
-          </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </section> -->
-    <section class="sdk-sec bluegrey-bg">
-        <div class="sdk presale">
-      
-          <div class="sdk__image ">
-            <table class="table presale__table">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Round</th>
-                  <th scope="col">Price</th>
-                  <th scope="col"> Muon available</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Open to</th>
-                  <th scope="col">Hardcap</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Seed</td>
-                  <td>$0.03</td>
-                  <td> 18,000,000</td>
-                  <td ><div class="d-flex"><div class="circle circle-green"></div> Ongoing</div></td>
-                  <td>Partners &  Strategic Investors</td>
-                  <td>$540,000</td>
 
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Private A</td>
-                  <td>$0.05</td>
-                  <td>27,000,000</td>
-                  <td><div class="d-flex"><div class="circle circle-yellow"></div> Soon</div></td>
-                  <td>Communities & KOLs</td>
-                  <td>$1,350,000</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Private B</td>
-                  <td>$0.065</td>
-                  <td>9,000,000</td>
-                  <td><div class="d-flex"><div class="circle circle-yellow"></div> Soon</div></td>
-                  <td>Communities & KOLs</td>
-                  <td>$600,000</td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>Private C</td>
-                  <td>$0.08</td>
-                  <td>5,625,000</td>
-                  <td><div class="d-flex"><div class="circle circle-yellow"></div> Soon</div></td>
-                  <td>Communities & KOLs</td>
-                  <td>$450,000</td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td>LGE/Public Listing</td>
-                  <td>$0.10</td>
-                  <td>12,000,000</td>
-                  <td><div class="d-flex"><div class="circle circle-yellow"></div> Soon</div></td>
-                  <td>-</td>
-                  <td></td>
-
-                </tr>
-              </tbody>
-            </table>
-            <p class="table__Res--p">Scroll horizontally to see the rest</p>
-          </div>
-          <div class="sdk__text moun__token">
-            <h2> PRESALE
-
-            </h2>
-            <p>
-              The Seed round for Partners and Strategic Investors is currently ongoing.  Private Sales will be open to the DEUS Finance, DAO Maker communities & Muon whitelist applicants. 
-              
-              <br>
-             
-            </p>
-            <p style="margin-top: 10px;">
-              Total Hardcap: $2,940,000
-            </p>
-            <p>             
-
-              Afterwards a LGE will be held in addition to a centralized exchange listing.            </p>
-              <!-- <a class="blue-text" style="text-decoration: underline;">
-                
-                Get Whitelisted              </a> -->
-          </div>
+        <div class="container bg-ff">
+            <div class="content sdk">
+                <div class="left">
+                    <div class="main-title"> Muon SDK </div>
+                    <div class="sub-desc"> A Muon JS library will be provided for developers to implement Muon into
+                        their DApps with ease.</div>
+                    <div class="details">
+                        This will enable developers to use Muon’s decentralized nodes as a service.
+                        <br><br>
+                        First off the blocks, DEUS finance has already built a Muon based oracle for providing live
+                        prices of stocks.
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="assets/image/svg/sdk.svg" alt="sdk">
+                </div>
+            </div>
         </div>
-    </section>
-   
-    <section class="roadmap-sec">
-      <div class="container">
-        <div class="center roadmap-header">
-          <h2>Roadmap</h2>
-        </div>
-        <div class="roadmap">
-         
-          <div class="roadmap__card">
-            <h2 class="roadmap__card--head">
-              <span class="blue-text">MAY</span> 
-            </h2>
-            <ul class="roadmap__ul">
-              <li class="roadmap__li">
-                Finalizing Oracle prototype
-              </li>
-              <li class="roadmap__li">
-                Releasing Pitch Deck
-              </li>
-              <li class="roadmap__li">
-                Publishing Website
-              </li>
-              <li class="roadmap__li">
-                Onboarding Strategic partnerships
-              </li>
-              <li class="roadmap__li">
-                Settling Technical Overview and Lite paper
-              </li>
-            </ul>
-            <p class="roadmap__card-status status--progres">
-              <span>◐</span> IN PROGRESS
-            </p>
-          </div>
-          <div class="roadmap__card">
-            <h2 class="roadmap__card--head">
-              <span class="blue-text">JUNE</span> 
-            </h2>
-            <ul class="roadmap__ul">
-              <li class="roadmap__li">
-                Adding Muon Gitbook to the website 
-              </li>
-              <li class="roadmap__li">
-                Securing seed round for strategic investors
-              </li>
-              <li class="roadmap__li">
-                Integrating Muon-based oracle <a class="purple-text" href="./demo.html">Pythia</a> in <br> DEUS finance 
-              </li>
-              <li class="roadmap__li">
-                Offering Muon Private Sale to multiple communities 
-              </li>
-              <li class="roadmap__li">
-                Releasing SDK & platform to strategic projects for a closed beta test
-              </li>
-            </ul>
-            <p class="roadmap__card-status status--soon">
-              <span>→</span> SOON
-            </p>
-          </div>
-          <div class="roadmap__card">
-            <h2 class="roadmap__card--head">
-              <span class="blue-text">JULY</span> 
-            </h2>
-            <ul class="roadmap__ul">
-              <li class="roadmap__li">
-                TGE with incentives to engaged communities
-              </li>
-              <li class="roadmap__li">
-                Exchange listing for public launch 
-              </li>
-              <li class="roadmap__li">
-                Liquidity Generation Event on Uniswap
-              </li>
-              <li class="roadmap__li">
-                Releasing Muon SDK to onboard first projects
-              </li>
-              <li class="roadmap__li">
-                Onboarding initial beta testers
-              </li>
-            </ul>
-            <p class="roadmap__card-status status--soon">
-              <span>→</span> SOON
-            </p>
-          </div>
-          <div class="roadmap__card">
-            <h2 class="roadmap__card--head">
-              <span class="blue-text">AUGUST</span> 
-            </h2>
-            <ul class="roadmap__ul">
-              <li class="roadmap__li">
-                Launching Muon node client for beta testers
 
-              <li class="roadmap__li">
-                Launching Mainnet with decentralized node network
-              </li>
-              <li class="roadmap__li">
-                Node client available to everyone to help secure the Muon Protocol              </li>
-              </li>
-            </ul>
-            <p class="roadmap__card-status status--soon">
-              <span>→</span> SOON
-            </p>
-          </div>
+        <div class="container bg-ff">
+            <div class="content decentralized">
+                <div class="left">
+                    <img src="assets/image/svg/nodes.svg" alt="nodes">
+                </div>
+
+                <div class="right">
+                    <div class="main-title"> Muon </div>
+                    <div class="sub-desc"> A decentralized node network.</div>
+                    <div class="details">
+                        Muon nodes run on a proof of stake like consensus & can have one or several roles.
+                        Collateralized nodes sign data and
+                        push it to the blockchain. Other nodes observe the data on blockchains and place disputes
+                        wherever they see anomalies.
+                        <br><br>
+                        Nodes can also take a hosting role and use IPFS to save the data. They can also become a
+                        decentralized cloud computer.
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
-    </section>
-    
-  
+
+        <div class="container bg-ff">
+            <div class="content opportunities">
+                <div class="opp-title">
+                    Limitless opportunities of Muon Protocol
+                </div>
+
+                <ul>
+                    <li>
+                        <img src="assets/image/svg/mtc20.svg" alt="mtc20">
+                        <div class="title">μRC20 tokens</div>
+                        <div class="desc">
+                            A new μRC20 token standard. μRC20 tokens exist on multiple chains with their balances and
+                            transactions being saved on
+                            all chains simultaneously.
+                            <br><br>
+                            Muon nodes synthesize all the data from all chains before allowing a transaction to run or
+                            fail.
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/image/svg/h-level.svg" alt="mtc20">
+                        <div class="title">High-level Apps</div>
+                        <div class="desc">
+                            Muon protocol allows high-level apps, built in Java or Python, to run in a decentralized
+                            manner and to push their final
+                            data to blockchain.
+                            <br><br>
+                            An instance would be enabling machine learning strategies using AI for DeFi dApps that push
+                            their data to blockchains.
+                            <br><br>
+                            Imagine having machine learning algorithms empowering yield aggregators like yearn.finance
+                            in a decentralized and
+                            secure way.
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/image/svg/light-network.svg" alt="mtc20">
+                        <div class="title">Lightning Networks</div>
+                        <div class="desc">
+                            Similar to Bitcoin’s lightning network, Muon merges small transactions and pushes data to
+                            blockchains periodically or
+                            upon request.
+                            This enables fast, low-cost payment solutions that are decentralized and secure with their
+                            data on blockchains.
+                            <br><br>
+                            Muon can also be a base layer protocol, where Layer-2 solutions are able to proliferate.
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+
+        <div class="container bk-darkblue ">
+            <div class="content ecosystem ">
+                <div class="left">
+                    <div class="main-title"> Muon Token </div>
+
+                    <div class="details">
+                        Muon token is the building block of the entire ecosystem and acts as a vehicle of service.
+                        <br><br>
+                        Muon token will be the first implementation of the μRC20 token standard. It will exist on
+                        multiple chains with its
+                        balances and transactions being saved simultaneously on all chains.
+                        <br><br>
+                        Muon nodes check user balances spanning the chains before allowing a transaction to run or fail.
+                        <br><br>
+                        Muon token covers the transaction and infrastructure cost to nodes. It is sent along with the
+                        request for data to pay
+                        the node for verifying that data.
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="assets/image/svg/echo.svg" alt="sdk">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container bk-darkblue ">
+            <div class="content usecase ">
+                <div class="left">
+                    <img src="assets/image/svg/useCalse.svg" alt="sdk">
+                </div>
+                <div class="right">
+                    <div class="main-title"> Muon Token use case </div>
+                    <div class="details">
+                        Muon token covers both the insurance and the infrastructure cost of the nodes.
+                        <br><br>
+                        The transaction fee is used primarily to pay for the insurance of the node’s stake, which is
+                        used to verify the
+                        transaction, and also for the actual node infrastructure.
+                        <br><br>
+                        The amount sent is divided between the nodes that process the transaction.
+                        <br><br>
+                        The Muon protocol aims to be a low-cost decentralized infrastructure similar to AWS, rather than
+                        a common expensive
+                        blockchain infrastructure.
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container bk-ff ">
+            <div class="content distribution ">
+                <div class="left">
+                    <div class="main-title"> Token Distribution after three years </div>
+                    <div class="details">
+                        <ul>
+                            <li> <span>10%</span> vested Seed Round</li>
+                            <li><span>14%</span> vested Private Sale</li>
+                            <li> <span>15%</span> Initial Liquidity on Exchanges</li>
+                            <li> <span>34%</span> Ecosystem Incentives</li>
+                            <li> <span>15%</span> Team (12 months cliff)</li>
+                            <li> <span>6%</span> Partners & Advisors</li>
+                            <li><span>5%</span> Marketing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="assets/image/png/dist-chart.png" alt="distribution">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container bk-ff ">
+            <div class="content release ">
+                <div class="main-title"> Token Release Schedule</div>
+                <img src="assets/image/png/Release.png" alt="Release">
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+        <div class="container">
+            <div class="content presale">
+                <div class="presale-box">
+                    <div class="presale-text">
+                        <p class="title">PRESALE</p>
+                        <p class="details">
+                            The Seed round for Partners and Strategic Investors is currently ongoing. Private Sales will
+                            be open to the DEUS
+                            Finance, DAO Maker communities &amp; Muon whitelist applicants.
+                            <br> <br>
+                            <span class="total-hardcap">Total Hardcap: $2,940,000</span>
+                            <br> <br>
+                            Afterwards a LGE will be held in addition to a centralized exchange listing.
+                            <br> <br>
+                            <a class="blue-text presale-link" href="#">
+                                Get Whitelisted &#8594;
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="scroll__table ">
+                    <table class="table presale-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Round</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Muon available</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Hardcap</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Seed</td>
+                                <td>$0.05</td>
+                                <td> 12,000,000</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="circle circle-green"></div> Ongoing
+                                    </div>
+                                </td>
+                                <td>$600,000</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Private Sale</td>
+                                <td>$0.095</td>
+                                <td>18,000,000</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="circle circle-orange"></div> Soon
+                                    </div>
+                                </td>
+                                <td>$1,710,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>LGE/Public Listing</td>
+                                <td>$0.10</td>
+                                <td>18,000,000</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="circle circle-orange"></div> Soon
+                                    </div>
+                                </td>
+                                <td></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="scroll-container">
+                    <p class="table-scroll-caption">Scroll horizontally to see the rest</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="container">
+            <div class="content join-us  join-us-last">
+                <p class="want"> Want to be a part of Moun Network? </p>
+                <p class="join">Join the discussion!</p>
+                <ul class="d-flex">
+                    <li>
+                        <a href="https://twitter.com/muon_net" target="_blank">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.6367 4.59375C17.3398 4.06641 17.9727 3.43359 18.4648 2.69531C17.832 2.97656 17.0938 3.1875 16.3555 3.25781C17.1289 2.80078 17.6914 2.09766 17.9727 1.21875C17.2695 1.64062 16.4609 1.95703 15.6523 2.13281C14.9492 1.39453 14 0.972656 12.9453 0.972656C10.9062 0.972656 9.25391 2.625 9.25391 4.66406C9.25391 4.94531 9.28906 5.22656 9.35938 5.50781C6.30078 5.33203 3.55859 3.85547 1.73047 1.64062C1.41406 2.16797 1.23828 2.80078 1.23828 3.50391C1.23828 4.76953 1.87109 5.89453 2.89062 6.5625C2.29297 6.52734 1.69531 6.38672 1.20312 6.10547V6.14062C1.20312 7.93359 2.46875 9.41016 4.15625 9.76172C3.875 9.83203 3.52344 9.90234 3.20703 9.90234C2.96094 9.90234 2.75 9.86719 2.50391 9.83203C2.96094 11.3086 4.33203 12.3633 5.94922 12.3984C4.68359 13.3828 3.10156 13.9805 1.37891 13.9805C1.0625 13.9805 0.78125 13.9453 0.5 13.9102C2.11719 14.9648 4.05078 15.5625 6.16016 15.5625C12.9453 15.5625 16.6367 9.97266 16.6367 5.08594C16.6367 4.91016 16.6367 4.76953 16.6367 4.59375Z"
+                                    fill="white" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/muon_net" target="_blank">
+                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.3047 1.73047C16.5156 0.746094 15.9531 0.359375 15.3203 0.605469L1.32812 5.98438C0.378906 6.37109 0.414062 6.89844 1.1875 7.14453L4.73828 8.23438L13.0352 3.03125C13.4219 2.75 13.8086 2.92578 13.4922 3.17188L6.77734 9.21875L6.53125 12.9102C6.91797 12.9102 7.05859 12.7695 7.26953 12.5586L8.99219 10.8711L12.6133 13.543C13.2812 13.9297 13.7734 13.7188 13.9492 12.9453L16.3047 1.73047Z"
+                                    fill="white" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li> <a href=" https://medium.com/muon" target="_blank">
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.49609 3.27734V10.8008C2.53125 11.0469 2.46094 11.3281 2.28516 11.5391L0.492188 13.6836V13.9648H5.55469V13.6836L3.76172 11.5391C3.55078 11.3281 3.48047 11.0469 3.51562 10.8008V4.29688L7.94531 14H8.47266L12.3047 4.29688V11.9961C12.3047 12.207 12.3047 12.2422 12.1641 12.3828L10.793 13.7188V14H17.4727V13.7188L16.1367 12.418C16.0312 12.3477 15.9609 12.1719 15.9961 12.0312V2.46875C15.9609 2.32812 16.0312 2.1875 16.1367 2.11719L17.4727 0.816406V0.5H12.7969L9.42188 8.86719L5.625 0.5H0.703125V0.816406L2.28516 2.71484C2.42578 2.85547 2.53125 3.06641 2.49609 3.27734Z"
+                                    fill="white" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li> <a href="https://discord.gg/rcK4p8g7Ce" target="_blank">
+                            <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0664 8.82812C11.0664 8.26562 10.6445 7.80859 10.1523 7.80859C9.625 7.80859 9.20312 8.26562 9.20312 8.82812C9.20312 9.35547 9.625 9.8125 10.1523 9.8125C10.6445 9.8125 11.0664 9.35547 11.0664 8.82812ZM6.84766 7.80859C6.35547 7.80859 5.93359 8.26562 5.93359 8.82812C5.93359 9.35547 6.35547 9.8125 6.84766 9.8125C7.375 9.8125 7.76172 9.35547 7.76172 8.82812C7.79688 8.26562 7.375 7.80859 6.84766 7.80859ZM16.375 2.11328C16.375 1.09375 15.5312 0.25 14.5117 0.25H2.45312C1.43359 0.25 0.625 1.09375 0.625 2.11328V14.2773C0.625 15.332 1.43359 16.1406 2.45312 16.1406H12.6484L12.1914 14.4883C14.8281 16.9141 14.0898 16.2812 16.375 18.25V2.11328ZM13.8086 10.6562C13.8086 10.6562 13.0352 11.957 11.0312 12.0273C11.0312 12.0273 10.7148 11.6406 10.4336 11.2891C11.6289 10.9727 12.0859 10.2344 12.0859 10.2344C11.6992 10.4805 11.3477 10.6211 11.0312 10.7617C9.09766 11.5703 6.95312 11.2891 5.40625 10.4453C5.40625 10.4102 5.19531 10.3047 5.05469 10.1992C5.05469 10.1992 5.47656 10.9375 6.63672 11.2891C6.35547 11.6055 6.03906 12.0273 6.03906 12.0273C4.03516 11.957 3.29688 10.6562 3.29688 10.6562C3.29688 7.73828 4.5625 5.41797 4.5625 5.41797C5.86328 4.43359 7.09375 4.46875 7.09375 4.46875L7.19922 4.57422C5.58203 5.03125 4.84375 5.73438 4.84375 5.73438C4.84375 5.73438 5.01953 5.62891 5.37109 5.48828C7.44531 4.57422 9.94141 4.57422 12.0859 5.73438C12.0859 5.73438 11.3828 5.06641 9.83594 4.60938L9.97656 4.46875C9.97656 4.46875 11.207 4.43359 12.5078 5.41797C12.5078 5.41797 13.8086 7.73828 13.8086 10.6562Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="content roadmap">
+                <div class="main-title">Roadmap</div>
+                <div class="d-flex ">
+                    <div class="q1 d-flex">
+                        <div class=" roadmap-box">
+                            <div class="wen">MAY</div>
+                            <div class="roadmap-tasks">
+                                <ul>
+                                    <li>Finalizing Oracle prototype</li>
+                                    <li>Releasing Pitch Deck</li>
+                                    <li>Preparing Open source stock api (50k+)</li>
+                                    <li>Onboarding Strategic partnerships</li>
+                                    <li>Settling Technical Overview and Lite paper</li>
+                                    <li>Adding Muon Gitbook to the website </li>
+                                    <li>Securing seed round for strategic investors</li>
+                                </ul>
+                            </div>
+                            <p class="roadmap-status status-progress">
+                                <span>&#9680;</span> IN PROGRESS
+                            </p>
+
+                        </div>
+                        <div class="roadmap-box">
+                            <div class="wen">June</div>
+                            <div class="roadmap-tasks">
+                                <ul>
+                                    <li>Releasing SDK & platform to strategic projects for a closed beta test</li>
+                                    <li>Integrating Muon-based oracle Pythia in DEUS finance </li>
+                                    <li>Offering Muon Private Sale to multiple communities </li>
+                                    <li>TGE with incentives to engaged communities</li>
+                                    <li>Exchange listing for public launch</li>
+                                    <li>Liquidity Generation Event on Uniswap</li>
+                                </ul>
+                            </div>
+
+                            <p class="roadmap-status status-soon">
+                                <span>&#8594;</span> SOON
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="q2 d-flex">
+                        <div class="roadmap-box">
+                            <div class="wen">Q3 2021</div>
+                            <div class="roadmap-tasks">
+                                <ul>
+                                    <li>Releasing Muon SDK to onboard first projects</li>
+                                    <li>Onboarding initial beta testers</li>
+                                    <li>Launching Muon node client for beta testers</li>
+                                    <li>Launching Mainnet beta with decentralized node network</li>
+                                </ul>
+                            </div>
+                            <p class="roadmap-status status-soon">
+                                <span>&#8594;</span> SOON
+                            </p>
+
+                        </div>
+
+                        <div class="roadmap-box">
+                            <div class="wen">Q4 2021</div>
+                            <div class="roadmap-tasks">
+                                <ul>
+                                    <li>Node client available to everyone to help secure the Muon Protocol</li>
+                                    <li>Develop a 3X leverage token (together with DEUS finance) </li>
+                                    <li>Releasing of a crosschain YieldFarming contract for DEUS Finance(first
+                                        merged dApp
+                                        prototype) </li>
+                                    <li>Launch a trustless bridge for DEUS Finance. </li>
+                                </ul>
+                            </div>
+                            <p class="roadmap-status status-soon">
+                                <span>&#8594;</span> SOON
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </main>
+
+
     <footer class="footer">
-      <div class="container">
-        <div class="footer__container">
-          <div class="center footer-header">
-            <h2>OUR <br> PARTNERS</h2>
-          </div>
-           <div class="center footer-logo ">
-             <a href="https://daomaker.com/" target="_blank"><img class="center footer-logo--img1 " src="/assets/image/svg/DaoLogo.svg" alt=""></a>
-             <a href="https://deus.finance/" target="_blank"><img  class="center footer-logo--img2 "  src="/assets/image/svg/DeusLogo.svg" alt=""></a>
-             <a href="https://intrinio.com/" target="_blank"><img  class="center footer-logo--img3 "  src="/assets/image/svg/IntrinioLogo.svg" alt=""></a>
-    
-           </div>
+        <div class="container">
+            <div class="content">
+                <div class="center footer-header">
+                    <o>Our Partners</o>
+                </div>
+
+                <div class="items center">
+                    <a class="item" href="https://daomaker.com/" target="_blank">
+                        <img class="center img1 " src="assets/image/png/daomaker4x.png" alt=""></a>
+                    </a>
+                    <a class="item" href="https://deus.finance/" target="_blank">
+                        <img class="center img2 " src="assets/image/svg/deus.svg" alt="">
+                    </a>
+                    <a class="item" href="https://intrinio.com/" target="_blank">
+                        <img class="center img3 " src="assets/image/png/intrinio4x.png" alt="">
+                    </a>
+                </div>
+
+                <nav class="f-nav center">
+                    <ul class="f-ul">
+                        <li class="f-list"><a href="https://twitter.com/muon_net" target="_blank"
+                                class="f-link">twitter</a>
+                        </li>
+                        <li class="f-list"><a href="https://t.me/muon_net" target="_blank" class="f-link">telegram</a>
+                        </li>
+                        <li class="f-list"><a href="https://medium.com/muon" target="_blank" class="f-link">medium</a>
+                        </li>
+                        <li class="f-list"><a href="https://discord.gg/rcK4p8g7Ce" target="_blank"
+                                class="f-link">discord</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav class="navigation__nav footer__nav">
-          <ul class="navigation__nav--ul list d-flex">
-            <li class="navigation__nav--li"><a href="https://twitter.com/muon_net" target="_blank" class="navigation__nav--link">twitter</a></li>
-            <li class="navigation__nav--li"><a href="https://t.me/muon_net" target="_blank" class="navigation__nav--link">telegram</a></li>
-            <li class="navigation__nav--li"><a href="https://medium.com/muon" target="_blank" class="navigation__nav--link">medium</a></li>
-            <li class="navigation__nav--li"><a href="https://discord.gg/rcK4p8g7Ce" target="_blank" class="navigation__nav--link">discord</a></li>
-          </ul>
-        </nav>
-      </div>
 
     </footer>
-  </body>
-  <script>
-    function jump() {
-      var elmnt = document.getElementById("learn-more");
-      elmnt.scrollIntoView();
-    }
-  </script>
-  <script src="/static/js/chart_bundle.js"></script>
-  <script src="/static/js/2.f17f236f.chunk.js"></script>
-  <script src="/static/js/main.f6ae5296.chunk.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal@2.x.x/js/jquery.terminal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assets/js/terminal.js"></script>
+</body>
+
 </html>

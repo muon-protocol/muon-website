@@ -1,0 +1,546 @@
+@media screen and (max-width: 1099px) {
+  .container .data-access .right {
+    text-align: right;
+  }
+  .container .data-access .right img {
+    width: 80%;
+  }
+  .container .trust .left img {
+    width: 90%;
+  }
+  .container .pythia .terminal-wrap .card {
+    width: 450px;
+    height: 325px;
+  }
+  .container .pythia .terminal-wrap .card .card-body {
+    background: #ffffff;
+  }
+  .container .sdk .right img {
+    width: 85%;
+  }
+  .container .roadmap .q1 .roadmap-box,
+  .container .roadmap .q2 .roadmap-box {
+    width: 400px;
+    height: 525px;
+  }
+  .footer .item {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container .content {
+    max-width: 900px;
+  }
+  .sub-desc {
+    font-size: 23px;
+  }
+  .split1 {
+    height: 225px;
+  }
+  .muon-network .top {
+    text-align: center;
+  }
+  .muon-network .top .elementary {
+    font-size: 25px;
+  }
+  .muon-network .top .muon-name {
+    margin-bottom: 25px;
+  }
+  .muon-network .top .muon-name img {
+    width: 85%;
+  }
+  .muon-network .top .muon-icon {
+    margin-bottom: 20px;
+  }
+  .muon-network .top .muon-icon img {
+    margin: auto;
+    width: 80%;
+  }
+  .container .main-title {
+    font-size: 30px;
+  }
+  .container .combined {
+    height: 250px;
+    padding: 0 35px 0 30px;
+    margin-top: -125px;
+  }
+  .container .combined .left {
+    max-width: 350px;
+    font-size: 28px;
+  }
+  .container .combined .right {
+    max-width: 450px;
+  }
+  .container .data-access {
+    margin-bottom: 50px;
+  }
+  .container .data-access .right {
+    text-align: right;
+    margin-top: 70px;
+  }
+  .container .pythia {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+  .container .pythia .left {
+    max-width: 350px;
+    margin-top: 30px;
+  }
+  .container .pythia .left .sub-desc {
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .container .pythia .left .details {
+    font-size: 14px;
+  }
+  .container .pythia .terminal-wrap .live {
+    font-size: 20px;
+  }
+  .container .pythia .terminal-wrap .showcase {
+    font-size: 10px;
+  }
+  .container .pythia .terminal-wrap .card {
+    width: 400px;
+    height: 280px;
+  }
+  .container .pythia .terminal-wrap .card .card-body {
+    width: 100%;
+    height: 100%;
+  }
+  .container .pythia .terminal-wrap .hours {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .container .trust .left {
+    margin-top: 25px;
+  }
+  .container .trust .right ul {
+    list-style: none;
+    max-width: 400px;
+  }
+  .container .trust .right ul li {
+    padding: 21px;
+  }
+  .container .trust .right ul li .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .container .trust .right ul li .desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .container .sdk {
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+  .container .sdk .right {
+    text-align: right;
+  }
+  .container .sdk .right img {
+    width: 75%;
+  }
+  .container .sdk .left {
+    max-width: 450px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .container .sdk .left .sub-desc {
+    max-width: 400px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  .container .decentralized .right {
+    margin-top: 40px;
+  }
+  .container .decentralized .left {
+    width: 90%;
+    margin-right: 70px;
+  }
+  .container .opportunities .opp-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .container .opportunities ul {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  .container .opportunities ul li {
+    padding: 22px 20px;
+  }
+  .container .ecosystem .left .details {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  .container .ecosystem .right {
+    margin-top: 60px;
+    margin-right: 30px;
+  }
+  .container .ecosystem .right img {
+    width: 80%;
+  }
+  .container .usecase .left img {
+    width: 80%;
+  }
+  .container .usecase .right .details {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  .container .distribution {
+    padding-bottom: 130px;
+  }
+  .container .distribution .right {
+    text-align: right;
+  }
+  .container .distribution .right img {
+    width: 95%;
+  }
+  .container .release {
+    margin-bottom: 150px;
+  }
+  .container .release .main-title {
+    margin-bottom: 70px;
+  }
+  .container .release img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    width: 100%;
+  }
+  header .content {
+    padding: 0 15px;
+  }
+  header .content .is-now {
+    display: none;
+  }
+  .container .content {
+    max-width: 90%;
+  }
+  .container .main-title {
+    font-size: 36px;
+  }
+  .container .muon-network {
+    margin-top: 55px;
+    height: unset;
+    min-height: 750px;
+    max-height: unset;
+  }
+  .container .muon-network .top .muon-icon img {
+    margin: auto;
+    width: 193px;
+  }
+  .container .muon-network .top .muon-name img {
+    width: 292px;
+  }
+  .container .muon-network .down .description {
+    line-height: 25px;
+    display: block;
+  }
+  .container .muon-network .down .description .item {
+    display: inline;
+  }
+  .container .muon-network .down .pronounce-wrap .learn-more {
+    display: none;
+  }
+  .container .muon-network .down .pronounce-wrap .title {
+    width: 100%;
+  }
+  .container .muon-network .down .pronounce-wrap .title .muon {
+    font-size: 17px;
+  }
+  .container .muon-network .down .pronounce-wrap .title .pronounce {
+    font-size: 13px;
+  }
+  .container .muon-network .down .pronounce-wrap .title .represent {
+    font-size: 9.5px;
+  }
+  .container .combined {
+    height: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 28px 20px;
+  }
+  .container .combined .left {
+    max-width: unset;
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .container .combined .right {
+    max-width: unset;
+  }
+  .container .data-access {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+  .container .data-access .left .sub-desc {
+    max-width: 300px;
+    font-size: 28px;
+  }
+  .container .data-access .right {
+    text-align: center;
+  }
+  .container .data-access .right img {
+    width: 80%;
+  }
+  .container .pythia {
+    padding-top: 60px;
+    padding-bottom: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .pythia .left {
+    max-width: 350px;
+    margin-top: 30px;
+  }
+  .container .pythia .left .sub-desc {
+    font-size: 28px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .container .pythia .left .details {
+    font-size: 14px;
+  }
+  .container .pythia .terminal-wrap {
+    margin-top: 40px;
+  }
+  .container .pythia .terminal-wrap .live {
+    font-size: 20px;
+  }
+  .container .pythia .terminal-wrap .showcase {
+    font-size: 10px;
+  }
+  .container .pythia .terminal-wrap .card {
+    width: 100%;
+    height: 345px;
+  }
+  .container .pythia .terminal-wrap .card .card-body {
+    width: 100%;
+    height: 100%;
+  }
+  .container .pythia .terminal-wrap .hours {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .container .trust {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-top: 70px;
+  }
+  .container .trust .left {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .container .trust .right ul {
+    list-style: none;
+    max-width: 400px;
+  }
+  .container .trust .right ul li {
+    padding: 21px;
+  }
+  .container .trust .right ul li .title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .container .trust .right ul li .desc {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .container .sdk {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .container .sdk .right {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .container .sdk .right img {
+    width: 75%;
+  }
+  .container .sdk .left {
+    max-width: 450px;
+    margin-bottom: 20px;
+  }
+  .container .sdk .left .sub-desc {
+    max-width: 320px;
+    font-size: 28px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .container .sdk .left .details {
+    max-width: 320px;
+  }
+  .container .decentralized {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 115px;
+  }
+  .container .decentralized .right {
+    margin-top: 60px;
+  }
+  .container .decentralized .right .sub-desc {
+    max-width: 200px;
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  .container .decentralized .left {
+    text-align: center;
+    width: 292px;
+    margin-right: 0;
+  }
+  .container .decentralized .left img {
+    width: 100%;
+  }
+  .container .opportunities {
+    margin-bottom: 70px;
+  }
+  .container .opportunities .opp-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .container .opportunities ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container .opportunities ul li {
+    padding: 30px;
+  }
+  .container .opportunities ul li .desc {
+    line-height: 24px;
+  }
+  .container .ecosystem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 55px;
+  }
+  .container .ecosystem .left .details {
+    margin-top: 30px;
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .container .ecosystem .right {
+    margin-top: 93px;
+    margin-right: 0px;
+    text-align: center;
+  }
+  .container .ecosystem .right img {
+    width: 275px;
+  }
+  .container .usecase {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 100px;
+  }
+  .container .usecase .left {
+    text-align: center;
+  }
+  .container .usecase .left img {
+    width: 80%;
+    max-width: 327px;
+  }
+  .container .usecase .right {
+    margin-top: 15px;
+  }
+  .container .usecase .right .details {
+    margin-top: 30px;
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .container .distribution {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 80px;
+  }
+  .container .distribution .right {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .container .distribution .right img {
+    width: 90%;
+  }
+  .container .release {
+    margin-bottom: 115px;
+  }
+  .container .release .main-title {
+    margin-bottom: 70px;
+  }
+  .container .release img {
+    width: 90%;
+  }
+  .container .roadmap {
+    padding: 0;
+    padding-top: 70px;
+  }
+  .container .roadmap .q1 .roadmap-box,
+  .container .roadmap .q2 .roadmap-box {
+    max-width: 450px;
+    width: 100%;
+    height: 525px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .container .roadmap .q1 .roadmap-box .roadmap-tasks li,
+  .container .roadmap .q2 .roadmap-box .roadmap-tasks li {
+    list-style-position: outside;
+    padding-bottom: 10px;
+  }
+  .footer .f-nav .f-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .f-nav .f-ul .f-list .f-link {
+    font-size: 14px;
+    letter-spacing: unset;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer .f-nav .f-ul .f-list .f-link {
+    font-size: 12px;
+  }
+  .container .content {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer .f-nav .f-ul .f-list .f-link {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

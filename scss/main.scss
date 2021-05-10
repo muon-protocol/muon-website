@@ -1,29 +1,709 @@
-@import "abstract/mixin";
-@import "layout/header";
-@import "layout/footer";
+.main {
+    color: #313144;
+    font-family: Roboto;
+    font-style: normal;
+}
 
-@import "base/base";
-@import "base/typography";
+.sub-desc {
+    font-family: Reckless;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+}
+.content {
+    .main-title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+    }
+}
 
-@import "components/what.scss";
-@import "components/feature";
-@import "components/SDK";
-@import "components/MounToken";
-@import "components/MounNodes";
-@import "components/useCaseToken";
-@import "components/TokenEconomi";
-@import "components/TokenCirculation";
-@import "components/presale";
-@import "components/roadmap";
-@import "components/featureuseCase";
-@import "components/blockchain.scss";
+.muon-network {
+    height: calc(100vh - 35px);
+    min-height: 650px;
+    max-height: 900px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .top {
+        flex-grow: 1;
+        .muon-icon {
+            margin-bottom: 30px;
+        }
+        .muon-name {
+            margin-bottom: 45px;
+        }
+        .elementary {
+            font-family: Reckless;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            color: #5f5cfe;
+        }
+    }
+    .down {
+        .pronounce-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #5551ff;
+            .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                .first {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                }
+                .muon {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 28px;
+                    color: #5551ff;
+                    margin-right: 5px;
+                }
+                .pronounce {
+                    font-family: Reckless;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 18px;
+                }
+                img {
+                    margin-left: 3px;
+                    margin-right: 5px;
+                }
 
+                .represent {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 18px;
+                }
+            }
+            .learn-more {
+                font-family: FH Oscar;
+                font-size: 15px;
+                color: #5551ff;
+                cursor: pointer;
+                &:hover {
+                    color: #5451ffaf;
+                }
+            }
+        }
+        .description {
+            margin-top: 8px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            // justify-content: space-between;
+            .item {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+            }
+        }
+    }
+}
 
+.split1 {
+    height: 250px;
+}
 
+.container {
+    .combined {
+        height: 300px;
+        margin-top: -150px;
+        color: #ffffff;
+        background: #5f5cfe;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 74px 0 60px;
+        .left {
+            max-width: 500px;
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 36px;
+        }
+        .right {
+            max-width: 500px;
+            font-family: Reckless TRIAL;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            .name {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+    }
+    .data-access {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 85px;
+        margin-bottom: 85px;
+        .left {
+            margin-top: 60px;
+            max-width: 450px;
+            .main-title {
+                color: #5551ff;
+            }
+            .sub-desc {
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+            .details {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+            }
+        }
+    }
+    .pythia {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 90px;
+        padding-bottom: 30px;
+        .left {
+            margin-top: 60px;
+            max-width: 450px;
+            .main-title {
+                color: #8f00ff;
+            }
+            .sub-desc {
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+            .details {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+            }
+        }
+        .terminal-wrap {
+            .live {
+                font-weight: 500;
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+            .showcase {
+                margin-top: 8px;
+                font-weight: 300;
+                font-size: 12px;
+            }
+            .hours {
+                text-align: right;
+                margin-top: 14px;
+                font-weight: 300;
+                font-size: 12px;
+            }
+            .card {
+                filter: drop-shadow(0px 5px 10px rgba(144, 144, 144, 0.15));
+                border-radius: 10px;
+                border: 1px solid #afaefd;
+                overflow: hidden;
+                .card-header {
+                    text-align: center;
+                    background: #afaefd;
+                    font-family: Monument Grotesk;
+                    font-size: 12px;
+                    letter-spacing: 0.09em;
+                    height: 20px;
+                    color: #ffffff;
+                }
+                .card-body {
+                    background: #ffffff;
+                    width: 550px;
+                    height: 345px;
+                }
+            }
+        }
+    }
+    .trust {
+        display: flex;
+        font-family: Roboto;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 90px;
+        padding-bottom: 160px;
+        .left {
+            margin-top: 60px;
+            max-width: 450px;
+            .main-title {
+                color: #8f00ff;
+            }
+            .sub-desc {
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+            .details {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+            }
+        }
 
+        .right {
+            ul {
+                list-style: none;
+                max-width: 550px;
+                li {
+                    margin: 10px 0;
+                    background: #ffffff;
+                    padding: 30px;
+                    padding-bottom: 12px;
+                    .title {
+                        font-family: Roboto;
+                        font-weight: 500;
+                        font-size: 28px;
+                        margin-bottom: 10px;
+                    }
+                    .desc {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
 
+        .terminal-wrap {
+            .card {
+                filter: drop-shadow(0px 5px 10px rgba(144, 144, 144, 0.15));
+                border-radius: 10px;
+                border: 1px solid #afaefd;
+                overflow: hidden;
+                .card-header {
+                    text-align: center;
+                    background: #afaefd;
+                    font-family: Monument Grotesk;
+                    font-size: 12px;
+                    letter-spacing: 0.09em;
+                    height: 20px;
+                    color: #ffffff;
+                }
+                .card-body {
+                    background: #ffffff;
+                    width: 550px;
+                    height: 345px;
+                }
+            }
+        }
+    }
+    .join-us {
+        height: 150px;
+        margin-top: -75px;
+        color: #ffffff;
+        background: #5f5cfe;
+        padding: 20px 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        .want {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .join {
+            font-family: Reckless;
+            font-size: 24px;
+            margin-bottom: 18px;
+            margin-top: 10px;
+        }
+        ul {
+            li {
+                height: 24px;
+                width: 24px;
+                background: transparent;
+                margin: 0 25px;
+                svg {
+                    width: 100%;
+                    height: 100%;
+                }
+                &:hover {
+                    svg {
+                        path {
+                            transition: 0.2s all;
+                            fill: #000000;
+                        }
+                    }
+                }
+            }
+            list-style: none;
+        }
+    }
+    .join-us-last {
+        margin-top: 0px;
+    }
+    .sdk {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 248px;
+        margin-bottom: 110px;
+        .left {
+            margin-top: 60px;
+            max-width: 550px;
+            .main-title {
+                color: #ffa451;
+            }
+            .sub-desc {
+                max-width: 475px;
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+            .details {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+            }
+        }
+    }
 
+    .decentralized {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 120px;
+        .left {
+            margin-right: 200px;
+        }
+        .right {
+            margin-top: 60px;
+            max-width: 450px;
+            .main-title {
+                color: #ffa451;
+            }
+            .sub-desc {
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+            .details {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+            }
+        }
+    }
 
+    .opportunities {
+        // text-align: le;
+        padding-bottom: 40px;
+        .opp-title {
+            text-align: center;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            font-family: Roboto;
+            margin-bottom: 30px;
+        }
+        ul {
+            display: grid;
+            list-style: none;
+            grid-template-columns: auto auto auto;
+            grid-column-gap: 44px;
+            grid-row-gap: 44px;
+            li {
+                max-width: 380px;
+                width: 100%;
+                background: #f8f8ff;
+                padding: 32px 30px;
+                img {
+                    margin-bottom: 40px;
+                }
+                .title {
+                    color: #5551ff;
+                    margin-bottom: 20px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 28px;
+                    letter-spacing: 0.05em;
+                }
+                .desc {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 
+    .ecosystem {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        .right {
+            margin-top: 40px;
+            margin-right: 125px;
+        }
+        .left {
+            max-width: 450px;
+            .main-title {
+                color: #ffffff;
+            }
+            .details {
+                margin-top: 40px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                color: #ffffff;
+            }
+        }
+    }
 
+    .usecase {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        .left {
+            margin-top: 40px;
+        }
+        .right {
+            margin-top: 50px;
+            max-width: 450px;
+            .main-title {
+                color: #ffffff;
+            }
+            .details {
+                margin-top: 40px;
 
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                color: #ffffff;
+            }
+        }
+    }
+
+    .distribution {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 100px;
+        padding-bottom: 170px;
+        .left {
+            max-width: 450px;
+            .details {
+                ul {
+                    li {
+                        span {
+                            display: inline-block;
+                            width: 40px;
+                        }
+                    }
+                }
+            }
+            .main-title {
+                color: #313144;
+            }
+            .details {
+                color: #313144;
+                margin-top: 40px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                padding-left: 20px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .release {
+        text-align: center;
+        .main-title {
+            margin-bottom: 100px;
+        }
+        margin-bottom: 215px;
+    }
+
+    .presale {
+        color: #313144;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 16px;
+        padding-bottom: 130px;
+        .title {
+            font-weight: 500;
+            font-size: 36px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .presale-box {
+            max-width: 625px;
+            margin-bottom: 60px;
+            .details {
+                .total-hardcap {
+                    font-weight: 500;
+                }
+                .presale-link {
+                    color: #5551ff;
+                    font-weight: 500;
+                    &:hover {
+                        color: #5451ffaf;
+                    }
+                }
+            }
+        }
+
+        .scroll-container {
+            padding-left: 10px;
+            display: none;
+        }
+
+        @media (max-width: 1024px) {
+            .scroll-container {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .scroll__table {
+            @media (max-width: 1024px) {
+                overflow-x: scroll;
+                .scroll-container {
+                    display: block;
+                }
+            }
+
+            .table {
+                font-family: Roboto;
+                font-size: 16px;
+                line-height: 19px;
+                font-weight: 300;
+                margin-bottom: 10px;
+                border-collapse: collapse;
+                width: 100%;
+                min-width: 975px;
+                background-color: transparent;
+                text-align: left;
+
+                .d-flex {
+                    justify-content: left;
+                }
+                th {
+                    font-weight: unset;
+                }
+                thead {
+                    font-family: Roboto;
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-weight: 500;
+                }
+
+                td,
+                th,
+                tr {
+                    border-bottom: 1px solid #5551ff;
+                    vertical-align: middle;
+                    height: 45px;
+                    .circle {
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        margin-right: 5px;
+                        border: 1px solid #5551ff;
+                    }
+                    .circle-orange {
+                        background-color: #ffa451;
+                    }
+                    .circle-green {
+                        background-color: #1dd3bd;
+                    }
+                }
+            }
+        }
+    }
+
+    .roadmap {
+        padding-top: 70px;
+        padding-bottom: 100px;
+
+        .main-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .q1,
+        .q2 {
+            .roadmap-box {
+                width: 450px;
+                height: 500px;
+                margin: 20px 30px;
+                border: 1px solid #5551ff;
+                box-shadow: 0px 5px 10px rgba(85, 81, 255, 0.1);
+                border-radius: 10px;
+                padding: 30px 20px 20px 20px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                .roadmap-status {
+                    font-weight: 500;
+                    font-size: 17px;
+                    margin: 15px 0 0px 5px;
+                }
+
+                .status-progress {
+                    color: #ffa451;
+                }
+
+                .status-soon {
+                    color: #313144;
+                }
+
+                .wen {
+                    font-family: "FH Oscar";
+                    font-weight: 400;
+                    font-size: 25px;
+                    color: #5551ff;
+                    margin-bottom: 10px;
+                }
+
+                .roadmap-tasks {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #313144;
+                    padding: 20px 25px;
+                    position: relative;
+                    flex-grow: 1;
+                    border-top: 1px solid #5551ff;
+                    border-bottom: 1px solid #5551ff;
+                    // ul {
+                    //     height: 352px;
+                    // }
+
+                    li {
+                        list-style-position: outside;
+                        padding-bottom: 25px;
+                    }
+                }
+            }
+        }
+
+        .d-flex {
+            flex-wrap: wrap;
+        }
+    }
+}

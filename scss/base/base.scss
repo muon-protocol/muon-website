@@ -1,0 +1,51 @@
+@import "fonts";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    .content {
+        max-width: 1200px;
+        padding: 0 20px;
+        margin: auto;
+    }
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.d-flex-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.bg-f8 {
+    background: #f8f8ff;
+}
+
+.bg-ff {
+    background: #ffffff;
+}
+
+.purple {
+    color: #8f00ff;
+}
+
+.bk-darkblue {
+    background: #454571;
+}

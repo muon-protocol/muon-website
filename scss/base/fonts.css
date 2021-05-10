@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "FH Oscar";
+  src: url("../../assets/font/FH-Oscar/woff2(web)/FHOscar-Regular.woff2") format("woff2"), url("../../assets/font/FH-Oscar/ttf/FHOscar-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Reckless";
+  src: url("../../assets/font/Reckless/RecklessTRIAL-Regular.woff2") format("woff2"), url("../../assets/font/Reckless/RecklessTRIAL-Regular.woff") format("woff"), url("../../assets/font/Reckless/RecklessTRIAL-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Reckless TRIAL";
+  src: url("../../assets/font/Reckless/RecklessTRIAL-RegularItalic.woff2") format("woff2"), url("../../assets/font/Reckless/RecklessTRIAL-RegularItalic.woff") format("woff"), url("../../assets/font/Reckless/RecklessTRIAL-RegularItalic.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Monument Grotesk";
+  src: url("../../assets/font/MonumentGrotesk/MonumentGrotesk-Regular.woff") format("woff");
+  font-style: normal;
+}
+/*# sourceMappingURL=fonts.css.map */

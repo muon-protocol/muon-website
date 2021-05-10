@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "FH Oscar";
+  src: url("../../assets/font/FH-Oscar/woff2(web)/FHOscar-Regular.woff2") format("woff2"), url("../../assets/font/FH-Oscar/ttf/FHOscar-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Reckless";
+  src: url("../../assets/font/Reckless/RecklessTRIAL-Regular.woff2") format("woff2"), url("../../assets/font/Reckless/RecklessTRIAL-Regular.woff") format("woff"), url("../../assets/font/Reckless/RecklessTRIAL-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Reckless TRIAL";
+  src: url("../../assets/font/Reckless/RecklessTRIAL-RegularItalic.woff2") format("woff2"), url("../../assets/font/Reckless/RecklessTRIAL-RegularItalic.woff") format("woff"), url("../../assets/font/Reckless/RecklessTRIAL-RegularItalic.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Monument Grotesk";
+  src: url("../../assets/font/MonumentGrotesk/MonumentGrotesk-Regular.woff") format("woff");
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .content {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.d-flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.bg-f8 {
+  background: #f8f8ff;
+}
+
+.bg-ff {
+  background: #ffffff;
+}
+
+.purple {
+  color: #8f00ff;
+}
+
+.bk-darkblue {
+  background: #454571;
+}
+/*# sourceMappingURL=base.css.map */
