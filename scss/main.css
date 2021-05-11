@@ -323,22 +323,6 @@
   max-width: 450px;
 }
 
-.container .trust .left .main-title {
-  color: #8f00ff;
-}
-
-.container .trust .left .sub-desc {
-  margin-top: 15px;
-  margin-bottom: 30px;
-}
-
-.container .trust .left .details {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-}
-
 .container .trust .right ul {
   list-style: none;
   max-width: 550px;
@@ -450,6 +434,10 @@
   margin-bottom: 110px;
 }
 
+.container .sdk .right img {
+  width: 462px;
+}
+
 .container .sdk .left {
   margin-top: 60px;
   max-width: 550px;
@@ -483,7 +471,11 @@
 }
 
 .container .decentralized .left {
-  margin-right: 200px;
+  margin-right: 170px;
+}
+
+.container .decentralized .left img {
+  width: 430px;
 }
 
 .container .decentralized .right {
@@ -508,7 +500,7 @@
 }
 
 .container .opportunities {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .container .opportunities .opp-title {
@@ -539,6 +531,7 @@
 
 .container .opportunities ul li img {
   margin-bottom: 40px;
+  width: 125px;
 }
 
 .container .opportunities ul li .title {
@@ -574,6 +567,10 @@
   margin-right: 125px;
 }
 
+.container .ecosystem .right img {
+  width: 271px;
+}
+
 .container .ecosystem .left {
   max-width: 450px;
 }
@@ -603,6 +600,10 @@
 
 .container .usecase .left {
   margin-top: 40px;
+}
+
+.container .usecase .left img {
+  width: 391px;
 }
 
 .container .usecase .right {

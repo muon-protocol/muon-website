@@ -242,19 +242,6 @@
         .left {
             margin-top: 60px;
             max-width: 450px;
-            .main-title {
-                color: #8f00ff;
-            }
-            .sub-desc {
-                margin-top: 15px;
-                margin-bottom: 30px;
-            }
-            .details {
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: 300;
-                font-size: 16px;
-            }
         }
 
         .right {
@@ -355,6 +342,11 @@
         justify-content: space-between;
         margin-top: 248px;
         margin-bottom: 110px;
+        .right {
+            img {
+                width: 462px;
+            }
+        }
         .left {
             margin-top: 60px;
             max-width: 550px;
@@ -380,7 +372,10 @@
         justify-content: center;
         margin-bottom: 120px;
         .left {
-            margin-right: 200px;
+            margin-right: 170px;
+            img {
+                width: 430px;
+            }
         }
         .right {
             margin-top: 60px;
@@ -402,8 +397,7 @@
     }
 
     .opportunities {
-        // text-align: le;
-        padding-bottom: 40px;
+        padding-bottom: 80px;
         .opp-title {
             text-align: center;
             font-style: normal;
@@ -425,6 +419,7 @@
                 padding: 32px 30px;
                 img {
                     margin-bottom: 40px;
+                    width: 125px;
                 }
                 .title {
                     color: #5551ff;
@@ -453,6 +448,9 @@
         .right {
             margin-top: 40px;
             margin-right: 125px;
+            img {
+                width: 271px;
+            }
         }
         .left {
             max-width: 450px;
@@ -476,6 +474,9 @@
         padding-bottom: 40px;
         .left {
             margin-top: 40px;
+            img {
+                width: 391px;
+            }
         }
         .right {
             margin-top: 50px;

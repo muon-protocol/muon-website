@@ -57,9 +57,6 @@
     margin: auto;
     width: 80%;
   }
-  .container .main-title {
-    font-size: 30px;
-  }
   .container .combined {
     height: 250px;
     padding: 0 35px 0 30px;
@@ -88,7 +85,6 @@
     margin-top: 30px;
   }
   .container .pythia .left .sub-desc {
-    font-size: 23px;
     margin-top: 10px;
     margin-bottom: 20px;
   }
@@ -207,7 +203,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   header {
     width: 100%;
   }
@@ -218,7 +214,7 @@
     display: none;
   }
   .container .content {
-    max-width: 90%;
+    max-width: 100%;
   }
   .container .main-title {
     font-size: 36px;
@@ -404,8 +400,8 @@
   }
   .container .decentralized .left {
     text-align: center;
-    width: 292px;
-    margin-right: 0;
+    width: 100%;
+    margin: auto;
   }
   .container .decentralized .left img {
     width: 100%;
@@ -423,8 +419,10 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    grid-row-gap: 60px;
   }
   .container .opportunities ul li {
+    margin: auto;
     padding: 30px;
   }
   .container .opportunities ul li .desc {
