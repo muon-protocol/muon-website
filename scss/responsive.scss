@@ -292,6 +292,9 @@
         }
     }
 
+    .main {
+        margin-bottom: 100px;
+    }
     .container {
         .content {
             max-width: 100%;
@@ -568,6 +571,10 @@
         .roadmap {
             padding: 0;
             padding-top: 70px;
+            .inner {
+                width: 95%;
+                margin: auto;
+            }
             .q1 .roadmap-box,
             .q2 .roadmap-box {
                 max-width: 450px;

@@ -213,6 +213,9 @@
   header .content .is-now {
     display: none;
   }
+  .main {
+    margin-bottom: 100px;
+  }
   .container .content {
     max-width: 100%;
   }
@@ -496,6 +499,10 @@
   .container .roadmap {
     padding: 0;
     padding-top: 70px;
+  }
+  .container .roadmap .inner {
+    width: 95%;
+    margin: auto;
   }
   .container .roadmap .q1 .roadmap-box,
   .container .roadmap .q2 .roadmap-box {

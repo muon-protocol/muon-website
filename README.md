@@ -1,2 +1,1 @@
-# muon-website
-Website
+# Muon front-end
