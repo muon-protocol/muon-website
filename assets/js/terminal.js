@@ -14,7 +14,7 @@ $(function () {
     } else if (command !== '') {
       let start = performance.now();
       term.pause();
-      axios.get(`https://api-dev.pythia.digital/v1?app=stock&method=get_price&params[symbol]=${command}`)
+      axios.get(`https://api-dev.pythia.digital/v1?app=stock&method=get_price&params[symbol]=${command.toUpperCase()}`)
         .then(res => {
           let data = res.data;
           console.log(data)
