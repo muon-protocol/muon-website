@@ -1,4 +1,31 @@
-@media screen and (max-width: 1099px) {
+@media screen and (max-width: 1280px) {
+    .main {
+        .container:first-child {
+            margin-top: 55px;
+        }
+    }
+    .muon-network {
+        height: calc(100vh - 85px);
+        min-height: 500px;
+        max-height: 900px;
+        .top {
+            .muon-icon {
+                margin-bottom: 15px;
+                img {
+                    height: 160px;
+                }
+            }
+            .muon-name {
+                margin-bottom: 30px;
+                img {
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
     .container {
         .data-access {
             .right {
@@ -48,6 +75,7 @@
         }
     }
 }
+
 @media screen and (max-width: 1024px) {
     .container .content {
         max-width: 900px;
@@ -67,6 +95,7 @@
         .muon-name {
             img {
                 width: 85%;
+                height: unset;
             }
             margin-bottom: 25px;
         }
@@ -74,6 +103,7 @@
             margin-bottom: 20px;
             img {
                 margin: auto;
+                height: unset;
                 width: 80%;
             }
         }
@@ -305,15 +335,15 @@
         .muon-network {
             margin-top: 55px;
             height: unset;
-            min-height: 750px;
+            min-height: 700px;
             max-height: unset;
             .top {
                 .muon-icon img {
                     margin: auto;
-                    width: 193px;
+                    width: 150px;
                 }
                 .muon-name img {
-                    width: 292px;
+                    width: 270px;
                 }
             }
             .down {
