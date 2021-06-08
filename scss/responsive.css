@@ -19,6 +19,31 @@
   .muon-network .top .muon-name img {
     height: 35px;
   }
+  .container .roadmap .q1 .roadmap-box,
+  .container .roadmap .q2 .roadmap-box {
+    width: 390px;
+    height: 450px;
+    padding: 10px 20px 10px 20px;
+  }
+  .container .roadmap .q1 .roadmap-box .wen,
+  .container .roadmap .q2 .roadmap-box .wen {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .container .roadmap .q1 .roadmap-box .roadmap-tasks,
+  .container .roadmap .q2 .roadmap-box .roadmap-tasks {
+    padding: 20px 16px;
+  }
+  .container .roadmap .q1 .roadmap-box .roadmap-tasks li,
+  .container .roadmap .q2 .roadmap-box .roadmap-tasks li {
+    list-style-position: outside;
+    padding-bottom: 10px;
+  }
+  .container .roadmap .q1 .roadmap-box .roadmap-status,
+  .container .roadmap .q2 .roadmap-box .roadmap-status {
+    font-size: 15px;
+    margin: 10px 0 0px 5px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -41,10 +66,9 @@
   .container .sdk .right img {
     width: 85%;
   }
-  .container .roadmap .q1 .roadmap-box,
-  .container .roadmap .q2 .roadmap-box {
+  .container .q1 .roadmap-box,
+  .container .q2 .roadmap-box {
     width: 400px;
-    height: 525px;
   }
   .footer .item {
     max-width: 300px;
@@ -532,10 +556,14 @@
   .container .roadmap .q1 .roadmap-box,
   .container .roadmap .q2 .roadmap-box {
     max-width: 450px;
+    height: 600px;
     width: 100%;
-    height: 525px;
     margin: 0;
     margin-bottom: 20px;
+  }
+  .container .roadmap .q1 .roadmap-box .roadmap-tasks,
+  .container .roadmap .q2 .roadmap-box .roadmap-tasks {
+    padding: 20px 16px;
   }
   .container .roadmap .q1 .roadmap-box .roadmap-tasks li,
   .container .roadmap .q2 .roadmap-box .roadmap-tasks li {
