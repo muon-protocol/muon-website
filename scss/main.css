@@ -858,7 +858,6 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   border-top: 1px solid #5551ff;
-  border-bottom: 1px solid #5551ff;
 }
 
 .container .roadmap .q1 .roadmap-box .roadmap-tasks li,
