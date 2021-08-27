@@ -421,6 +421,7 @@
 
 .container .join-us-last {
   margin-top: 0px;
+  margin-bottom: 100px;
 }
 
 .container .sdk {
@@ -677,7 +678,7 @@
   font-family: Roboto;
   font-weight: 300;
   font-size: 16px;
-  padding-bottom: 130px;
+  padding-bottom: 80px;
 }
 
 .container .presale .title {
